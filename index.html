@@ -7,15 +7,55 @@
     <meta name="author" content="Sona Juhasova">
     <meta name="description" content="This is my portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="icon" type="image/x-icon" href="" />
 </head>
 
 <body>
-    <header></header>
-    <main></main>
+    <header>
+        <a href='#home'>Home</a>
+        <a href='#projects'>Projects</a>
+        <a href='#shots'>Shots</a>
+        <a href='#about'>About me</a>
+    </header>
+    <main>
+        <section id="home"></section>
+
+        <section id="projects">
+            <div class="middle-section">
+                <img src="media/previous.png" onclick="plusSlides(-1)" class="prev"></img>
+                <div class="slideshow-container">
+
+                    <div class="safetogo">
+                        <img src="media/safetogo/logo framed.png" alt="SafeToGo">
+                        <div class="text">
+                            <h1 class="title">SafeToGo</h1>
+                            <p class="subtitle">SafeToGo is an app created to help people in high-risk groups avoid
+                                crowds
+                                during Covid19. Using API we were able to develop a digital solution for users who need
+                                to
+                                go to public spaces but need to protect themselves.</p>
+                            <a href="" class="link">View more</a>
+                        </div>
+                    </div>
+                </div>
+                <img src="media/next.png" onclick="plusSlides(1)" class="next"></img>
+
+            </div>
+            <div class="dots">
+                <div class="dot" onclick="currentSlide(1)"></div>
+                <div class="dot" onclick="currentSlide(2)"></div>
+                <div class="dot" onclick="currentSlide(3)"></div>
+            </div>
+        </section>
+
+
+        <section id="shots"></section>
+
+        <section id="about"></section>
+    </main>
     <footer></footer>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>

@@ -13,6 +13,150 @@ frame {
     height: auto;
 }
 
+:root {
+    --bg: #ECECEC;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: flex-end;
+    padding-right: 4vw;
+    margin-top: 1vw;
+    position: absolute;
+}
+
+header a {
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    font-size: 2.5vh;
+    color: #2a2a2a;
+    margin: 1vw;
+    text-decoration: none;
+
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black;
+}
+
+.title {
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    font-size: 6vh;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #2a2a2a;
+    margin: 0 3vh 5vh 3vh;
+}
+
+.subtitle {
+    width: 25vw;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 2.5vh;
+    letter-spacing: 0.02em;
+    line-height: 5vh;
+    text-align: left;
+    color: #2a2a2a;
+    margin: 3vh;
+}
+
+.link {
+    width: 25vw;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 2.5vh;
+    letter-spacing: 0.02em;
+    line-height: 5vh;
+    text-align: left;
+    color: #2a2a2a;
+    margin: 3vh 3vh 0 3vh;
+
+}
+
+.link:hover {
+    opacity: 0.5;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.middle-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.prev {
+    height: 8vh;
+    margin: 45vh 0 0 auto;
+}
+
+.next {
+    height: 8vh;
+    margin: 45vh auto 0 0;
+}
+
+.slideshow-container {
+    margin: 15vh 15vh 0 15vh;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.safetogo {
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    height: fit-content;
+    margin: auto 0 auto 0;
+}
+
+.safetogo img {
+    height: 70vh;
+}
+
+.dots {
+    display: flex;
+    flex-direction: row;
+    margin: 2vh auto;
+}
+
+.dot {
+    border-radius: 50%;
+    background: #E3E0E0;
+    box-shadow: inset 3px 3px 3px #C8C6C6,
+        inset -3px -3px 3px #F1EFEF;
+    height: 1.5vw;
+    width: 1.5vw;
+    margin: 0.7vw;
+}
+
+.dot:nth-child(2) {
+    border-radius: 50%;
+    background: #ececec;
+    box-shadow: 2px 2px 2px #D4D4D4,
+        -2px -2px 2px #F5F5F5;
+    height: 1.5vw;
+    width: 1.5vw;
+    margin: 0.7vw;
+
+}
 
 
 /* Extra small devices (phones, 600px and down) */

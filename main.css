@@ -19,6 +19,7 @@ frame {
 
 body {
     background-color: var(--bg);
+    overflow-x: hidden;
 }
 
 header {
@@ -47,6 +48,64 @@ section {
     border: 1px solid black;
 }
 
+.section-title {
+    display: flex;
+    width: 100vw;
+    height: 75vh;
+}
+
+.title-3d {
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    font-size: 35vh;
+    text-align: left;
+    color: #ececec;
+    text-shadow: 10px 10px 20px #CCCCCC,
+        -15px -15px 30px #F5F5F5;
+    margin: auto auto 5vh 10vw;
+    animation-name: rise;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+
+}
+
+.title-3d-animation {
+    animation-name: rise;
+    animation-duration: 1s linear;
+
+}
+
+@keyframes rise {
+    0% {
+        text-shadow: 0px 0px 0px #CCCCCC,
+            0px 0px 0px #F5F5F5;
+        margin: auto auto 6vh 10vw;
+        ;
+    }
+
+    50% {
+        text-shadow: 0px 0px 0px #CCCCCC,
+            0px 0px 0px #F5F5F5;
+        margin: auto auto 6vh 10vw;
+    }
+
+    /*
+
+    100% {
+        text-shadow: 7px 7px 13px #CCCCCC,
+            -7px -7px 13px #F5F5F5;
+    } */
+
+
+    100% {
+        text-shadow: 10px 10px 20px #CCCCCC,
+            -15px -15px 30px #F5F5F5;
+        margin: auto auto 5vh 10vw;
+    }
+
+}
+
+/*fonts*/
 .title {
     font-family: "Roboto Slab";
     font-weight: 300;
@@ -86,6 +145,7 @@ section {
     opacity: 0.5;
 }
 
+/*PROJECTS section*/
 #projects {
     display: flex;
     flex-direction: column;
@@ -98,6 +158,8 @@ section {
     flex-direction: row;
 }
 
+/*arrow buttons*/
+
 .prev {
     height: 8vh;
     margin: 45vh 0 0 auto;
@@ -106,6 +168,13 @@ section {
 .next {
     height: 8vh;
     margin: 45vh auto 0 0;
+}
+
+.prev:hover,
+.next:hover {
+    cursor: pointer;
+    height: 9vh;
+    margin-top: 44.5vh;
 }
 
 .slideshow-container {
@@ -117,6 +186,7 @@ section {
 
 }
 
+/*SafeToGo*/
 .safetogo {
     display: flex;
     flex-direction: row;
@@ -130,6 +200,11 @@ section {
 .safetogo img {
     height: 70vh;
 }
+
+/*Kreaplace*/
+/*CSS 3D animations*/
+
+/*DOTS*/
 
 .dots {
     display: flex;
@@ -147,7 +222,11 @@ section {
     margin: 0.7vw;
 }
 
-.dot:nth-child(2) {
+.dot:hover {
+    cursor: pointer;
+}
+
+.dot-active {
     border-radius: 50%;
     background: #ececec;
     box-shadow: 2px 2px 2px #D4D4D4,
@@ -155,6 +234,105 @@ section {
     height: 1.5vw;
     width: 1.5vw;
     margin: 0.7vw;
+
+}
+
+/* Fading animation */
+/*
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        margin-left: 3vw;
+    }
+
+    to {
+        margin-left: 0vw;
+    }
+}
+*/
+
+
+
+/*Shots section*/
+#shots {
+    display: flex;
+    flex-direction: row;
+}
+
+.shots-text {
+    display: flex;
+    flex-direction: column;
+    margin: auto auto auto 10vw;
+}
+
+.shots-title {
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    font-size: 10vh;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #2a2a2a;
+    margin: 3vh;
+
+}
+
+
+.slides-section {
+    display: flex;
+    flex-direction: column;
+    margin: 10vh 15vw auto auto;
+}
+
+.slides-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.shots-slideshow-container {}
+
+.prev-shot {
+    height: 8vh;
+    margin: 35vh 7vw 0 0;
+}
+
+.next-shot {
+    height: 8vh;
+    margin: 35vh auto 0 7vw;
+}
+
+.myShots {
+    height: 75vh;
+    margin-bottom: 3vh;
+    box-shadow: 5px 5px 10px #C8C6C6,
+        -5px -5px 10px #F1EFEF;
+}
+
+.dot- {
+    border-radius: 50%;
+    background: #E3E0E0;
+    box-shadow: inset 3px 3px 3px #C8C6C6,
+        inset -3px -3px 3px #F1EFEF;
+    height: 1vw;
+    width: 1vw;
+    margin: 0.5vw;
+}
+
+.dot-:hover {
+    cursor: pointer;
+}
+
+.dot--active {
+    border-radius: 50%;
+    background: #ececec;
+    box-shadow: 2px 2px 2px #D4D4D4,
+        -2px -2px 2px #F5F5F5;
+    height: 1vw;
+    width: 1vw;
+    margin: 0.5vw;
 
 }
 

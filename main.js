@@ -66,3 +66,82 @@ function showShots(n) {
     shots[shotIndex - 1].style.display = "block";
     dots[shotIndex - 1].className += " dot--active";
 }
+
+//navigation position change on scroll
+
+
+window.onscroll = function () {
+    scrollFunction();
+    scrollNav()
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
+
+        document.getElementById("header").classList.remove("navigation");
+        document.getElementById("header").classList.add("navigation-scroll");
+
+        document.getElementById("a1").classList.remove("nav-el");
+        document.getElementById("a1").classList.add("nav-el-scroll");
+
+        document.getElementById("a2").classList.remove("nav-el");
+        document.getElementById("a2").classList.add("nav-el-scroll");
+        document.getElementById('a2').style.marginLeft = '0.5vw';
+
+        document.getElementById("a3").classList.remove("nav-el");
+        document.getElementById("a3").classList.add("nav-el-scroll");
+
+        document.getElementById("a4").classList.remove("nav-el");
+        document.getElementById("a4").classList.add("nav-el-scroll");
+
+    } else {
+
+        document.getElementById("header").classList.remove("navigation-scroll");
+        document.getElementById("header").classList.add("navigation");
+
+        document.getElementById("a1").classList.remove("nav-el-scroll");
+        document.getElementById("a1").classList.add("nav-el");
+
+        document.getElementById("a2").classList.remove("nav-el-scroll");
+        document.getElementById("a2").classList.add("nav-el");
+
+
+        document.getElementById("a3").classList.remove("nav-el-scroll");
+        document.getElementById("a3").classList.add("nav-el");
+
+        document.getElementById("a4").classList.remove("nav-el-scroll");
+        document.getElementById("a4").classList.add("nav-el");
+    }
+
+}
+
+function scrollNav() {
+    if (document.body.scrollTop <= 550 || document.documentElement.scrollTop <= 550) {
+        document.getElementById("a1").style.fontWeight = '500';
+        document.getElementById("a2").style.fontWeight = '300';
+        document.getElementById("a3").style.fontWeight = '300';
+        document.getElementById("a4").style.fontWeight = '300';
+    }
+    if (document.body.scrollTop > 550 && document.body.scrollTop <= 1800 || document.documentElement.scrollTop > 550 && document.documentElement.scrollTop <= 1800) {
+        document.getElementById("a1").style.fontWeight = '300';
+        document.getElementById("a2").style.fontWeight = '500';
+        document.getElementById("a3").style.fontWeight = '300';
+        document.getElementById("a4").style.fontWeight = '300';
+
+        document.getElementById('title1').classList.add('title-3d-animation');
+    }
+    if (document.body.scrollTop > 1800 && document.body.scrollTop <= 3300 || document.documentElement.scrollTop > 1800 && document.documentElement.scrollTop <= 3300) {
+        document.getElementById("a1").style.fontWeight = '300';
+        document.getElementById("a2").style.fontWeight = '300';
+        document.getElementById("a3").style.fontWeight = '500';
+        document.getElementById("a4").style.fontWeight = '300';
+
+        document.getElementById('title2').classList.add('title-3d-animation');
+    }
+    if (document.body.scrollTop > 3300 || document.documentElement.scrollTop > 3300) {
+        document.getElementById("a1").style.fontWeight = '300';
+        document.getElementById("a2").style.fontWeight = '300';
+        document.getElementById("a3").style.fontWeight = '300';
+        document.getElementById("a4").style.fontWeight = '500';
+    }
+}

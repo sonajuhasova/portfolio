@@ -76,7 +76,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
+    if (document.body.scrollTop > (100 * window.innerHeight / 100) || document.documentElement.scrollTop > (100 * window.innerHeight / 100)) {
 
         document.getElementById("header").classList.remove("navigation");
         document.getElementById("header").classList.add("navigation-scroll");
@@ -85,8 +85,7 @@ function scrollFunction() {
         document.getElementById("a1").classList.add("nav-el-scroll");
 
         document.getElementById("a2").classList.remove("nav-el");
-        document.getElementById("a2").classList.add("nav-el-scroll");
-        document.getElementById('a2').style.marginLeft = '0.5vw';
+        document.getElementById("a2").classList.add("nav-el-scroll");   
 
         document.getElementById("a3").classList.remove("nav-el");
         document.getElementById("a3").classList.add("nav-el-scroll");
@@ -116,13 +115,13 @@ function scrollFunction() {
 }
 
 function scrollNav() {
-    if (document.body.scrollTop <= 550 || document.documentElement.scrollTop <= 550) {
+    if (document.body.scrollTop <= (100 * window.innerHeight / 100) || document.documentElement.scrollTop <= (100 * window.innerHeight / 100)) {
         document.getElementById("a1").style.fontWeight = '500';
         document.getElementById("a2").style.fontWeight = '300';
         document.getElementById("a3").style.fontWeight = '300';
         document.getElementById("a4").style.fontWeight = '300';
     }
-    if (document.body.scrollTop > 550 && document.body.scrollTop <= 1800 || document.documentElement.scrollTop > 550 && document.documentElement.scrollTop <= 1800) {
+    if (document.body.scrollTop > (100 * window.innerHeight / 100) && document.body.scrollTop <= (275 * window.innerHeight / 100) || document.documentElement.scrollTop > (100 * window.innerHeight / 100) && document.documentElement.scrollTop <= (275 * window.innerHeight / 100)) {
         document.getElementById("a1").style.fontWeight = '300';
         document.getElementById("a2").style.fontWeight = '500';
         document.getElementById("a3").style.fontWeight = '300';
@@ -130,7 +129,7 @@ function scrollNav() {
 
         document.getElementById('title1').classList.add('title-3d-animation');
     }
-    if (document.body.scrollTop > 1800 && document.body.scrollTop <= 3300 || document.documentElement.scrollTop > 1800 && document.documentElement.scrollTop <= 3300) {
+    if (document.body.scrollTop > (275 * window.innerHeight / 100) && document.body.scrollTop <= (400 * window.innerHeight / 100) || document.documentElement.scrollTop > (275 * window.innerHeight / 100) && document.documentElement.scrollTop <= (400 * window.innerHeight / 100)) {
         document.getElementById("a1").style.fontWeight = '300';
         document.getElementById("a2").style.fontWeight = '300';
         document.getElementById("a3").style.fontWeight = '500';
@@ -138,7 +137,7 @@ function scrollNav() {
 
         document.getElementById('title2').classList.add('title-3d-animation');
     }
-    if (document.body.scrollTop > 3300 || document.documentElement.scrollTop > 3300) {
+    if (document.body.scrollTop > (400 * window.innerHeight / 100) || document.documentElement.scrollTop > (400 * window.innerHeight / 100)) {
         document.getElementById("a1").style.fontWeight = '300';
         document.getElementById("a2").style.fontWeight = '300';
         document.getElementById("a3").style.fontWeight = '300';

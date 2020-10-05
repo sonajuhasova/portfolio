@@ -20,6 +20,7 @@ frame {
 body {
     background-color: var(--bg);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .navigation {
@@ -99,10 +100,10 @@ section {
 
 .title-3d-animation {
     animation-name: rise;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-timing-function: ease;
-    text-shadow: 10px 10px 20px #CCCCCC,
-        -15px -15px 30px #F5F5F5;
+    text-shadow: 5px 5px 5px #CCCCCC,
+        -3px -3px 3px #F5F5F5;
 
 }
 
@@ -115,8 +116,8 @@ section {
     }
 
     100% {
-        text-shadow: 10px 10px 20px #CCCCCC,
-            -15px -15px 30px #F5F5F5;
+        text-shadow: 5px 5px 5px #CCCCCC,
+            -3px -3px 3px #F5F5F5;
         margin: auto auto 5vh 10vw;
     }
 
@@ -359,6 +360,26 @@ section {
 
 }
 
+.about-container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+.about-img {
+    height: 80vh;
+    margin: 10vh 1vw;
+    box-shadow: 5px 5px 10px #C8C6C6,
+        -5px -5px 10px #F1EFEF;
+}
+
+.about-text {
+    height: fit-content;
+    width: fit-content;
+    margin: auto 1vw;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}

@@ -167,7 +167,7 @@ section {
 }
 
 .previous-project:hover {
-    font-size: 3vh;
+    font-size: 2.75vh;
     cursor: pointer;
 }
 
@@ -182,6 +182,6 @@ section {
 }
 
 .next-project:hover {
-    font-size: 3vh;
+    font-size: 2.75vh;
     cursor: pointer;
 }

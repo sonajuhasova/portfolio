@@ -167,7 +167,60 @@ section {
 #home {
     background-image: url(media/me/home.JPG);
     background-size: cover;
+    display: flex;
 }
+
+.container {
+    margin: auto 20vw auto auto;
+    display: flex;
+}
+
+.container p {
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    font-size: 3vh;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #ececec;
+    line-height: 6vh;
+    width: 18vw;
+}
+
+
+.container p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 1px;
+    animation: blink 1s infinite;
+}
+
+.container p span.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #ccc;
+    }
+
+    49% {
+        background-color: #ccc;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    99% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #ccc;
+    }
+}
+
 
 /*PROJECTS section*/
 #projects {
@@ -326,6 +379,11 @@ section {
 .next-shot {
     height: 8vh;
     margin: 35vh auto 0 7vw;
+}
+
+.prev-shot:hover,
+.next-shot:hover {
+    cursor: pointer;
 }
 
 .myShots {

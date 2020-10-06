@@ -1,0 +1,94 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+video,
+frame {
+    max-width: 100%;
+    height: auto;
+}
+
+:root {
+    --bg: #ECECEC;
+}
+
+body {
+    background-color: var(--bg);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/*fonts*/
+.head-title {
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    font-size: 10vh;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #2a2a2a;
+    margin: 0 3vh 0 3vh;
+
+}
+
+.head-subtitle {
+    width: 25vw;
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    font-size: 3vh;
+    letter-spacing: 0.02em;
+    line-height: 5vh;
+    text-align: left;
+    color: #2a2a2a;
+    margin: 0 3vh 7vh 3vh;
+}
+
+.title {
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    font-size: 6vh;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #2a2a2a;
+    margin: 0 3vh 5vh 3vh;
+}
+
+.subtitle {
+    width: 25vw;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 2.5vh;
+    letter-spacing: 0.02em;
+    line-height: 5vh;
+    text-align: left;
+    color: #2a2a2a;
+    margin: 3vh;
+}
+
+.link {
+    width: 25vw;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 2.5vh;
+    letter-spacing: 0.02em;
+    line-height: 5vh;
+    text-align: left;
+    color: #2a2a2a;
+    margin: 3vh 3vh 0 3vh;
+
+}
+
+.link:hover {
+    opacity: 0.5;
+}
+
+.mobile-mockup {
+    height: 75vh;
+    margin-bottom: 3vh;
+    box-shadow: 5px 5px 10px #C8C6C6,
+        -5px -5px 10px #F1EFEF;
+}

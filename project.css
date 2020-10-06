@@ -23,6 +23,14 @@ body {
     scroll-behavior: smooth;
 }
 
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
 /*fonts*/
 .head-title {
     font-family: "Roboto Slab";
@@ -58,7 +66,7 @@ body {
 }
 
 .subtitle {
-    width: 25vw;
+    width: 28vw;
     font-family: Roboto;
     font-weight: 300;
     font-size: 2.5vh;
@@ -86,9 +94,94 @@ body {
     opacity: 0.5;
 }
 
+.arrow {
+    height: 5vh;
+    position: fixed;
+    top: 10vh;
+    left: 10vh;
+}
+
+.arrow:hover {
+    height: 5.5vh;
+}
+
+.mobile-framed-right {
+    height: 85vh;
+    margin: auto auto auto 5vw;
+}
+
+.mobile-framed-left {
+    height: 85vh;
+    margin: auto 5vw auto auto;
+}
+
 .mobile-mockup {
     height: 75vh;
-    margin-bottom: 3vh;
+    margin: auto 2vw;
     box-shadow: 5px 5px 10px #C8C6C6,
         -5px -5px 10px #F1EFEF;
+}
+
+.text-wrapper-left {
+    margin: auto 0 auto auto;
+}
+
+
+.text-wrapper-right {
+    margin: auto auto auto 0;
+}
+
+.wide-text {
+    width: 40vw;
+}
+
+.mockup-wrapper {
+    margin: auto auto auto 5vw;
+}
+
+.mobile-mockup-api {
+    height: 75vh;
+    margin: auto 5vw auto auto;
+    box-shadow: 5px 5px 10px #C8C6C6,
+        -5px -5px 10px #F1EFEF;
+}
+
+.other-projects {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90vw;
+    position: absolute;
+    top: 390vh;
+    left: 5vw;
+}
+
+.previous-project {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 2.5vh;
+    letter-spacing: 0.02em;
+    line-height: 5vh;
+    text-align: left;
+    color: #2a2a2a;
+}
+
+.previous-project:hover {
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+.next-project {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 2.5vh;
+    letter-spacing: 0.02em;
+    line-height: 5vh;
+    text-align: left;
+    color: #2a2a2a;
+}
+
+.next-project:hover {
+    font-size: 3vh;
+    cursor: pointer;
 }

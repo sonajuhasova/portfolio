@@ -185,3 +185,30 @@ section {
     font-size: 2.75vh;
     cursor: pointer;
 }
+
+#k3 img {
+    height: 75vh;
+    margin: auto auto auto 10vw;
+    box-shadow: 5px 5px 10px #C8C6C6,
+        -5px -5px 10px #F1EFEF;
+
+
+
+}
+
+
+#k4 div {
+    display: flex;
+    width: 70vw;
+    overflow-y: scroll;
+
+}
+
+#k4 div img {
+    height: auto;
+    width: 20vw;
+    margin: auto;
+    box-shadow: 5px 5px 10px #C8C6C6,
+        -5px -5px 10px #F1EFEF;
+
+}

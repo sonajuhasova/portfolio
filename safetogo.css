@@ -23,14 +23,6 @@ body {
     scroll-behavior: smooth;
 }
 
-section {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
 /*fonts*/
 .head-title {
     font-family: "Roboto Slab";
@@ -39,7 +31,6 @@ section {
     letter-spacing: 0.02em;
     text-align: left;
     color: #2a2a2a;
-    margin: 0 3vh 0 3vh;
 
 }
 
@@ -52,7 +43,6 @@ section {
     line-height: 5vh;
     text-align: left;
     color: #2a2a2a;
-    margin: 0 3vh 7vh 3vh;
 }
 
 .title {
@@ -105,58 +95,105 @@ section {
     height: 5.5vh;
 }
 
-.mobile-framed-right {
+#intro {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#intro div {
+    margin: auto 0 auto auto;
+}
+
+#intro div h1 {
+    margin: 0 3vh 0 3vh;
+}
+
+#intro div h2 {
+    margin: 0 3vh 7vh 3vh;
+}
+
+#intro img {
     height: 85vh;
     margin: auto auto auto 5vw;
 }
 
-.mobile-framed-left {
+#user-journey {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#user-journey img {
     height: 85vh;
     margin: auto 5vw auto auto;
 }
 
-.mobile-mockup {
+#user-journey div {
+    margin: auto auto auto 0;
+}
+
+#user-journey div h2 {
+    width: 40vw;
+}
+
+#colour-coding {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#colour-coding div:nth-of-type(1) {
+    margin: auto 0 auto auto;
+}
+
+#colour-coding div:nth-of-type(2) {
+    margin: auto auto auto 5vw;
+}
+
+#colour-coding div:nth-of-type(2) img {
     height: 75vh;
     margin: auto 2vw;
     box-shadow: 5px 5px 10px #C8C6C6,
         -5px -5px 10px #F1EFEF;
 }
 
-.text-wrapper-left {
-    margin: auto 0 auto auto;
+#api {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
-
-.text-wrapper-right {
-    margin: auto auto auto 0;
-}
-
-.wide-text {
-    width: 40vw;
-}
-
-.mockup-wrapper {
-    margin: auto auto auto 5vw;
-}
-
-.mobile-mockup-api {
+#api img {
     height: 75vh;
     margin: auto 5vw auto auto;
     box-shadow: 5px 5px 10px #C8C6C6,
         -5px -5px 10px #F1EFEF;
 }
 
-.other-projects {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 90vw;
-    position: absolute;
-    top: 390vh;
-    left: 5vw;
+#api div {
+    margin: auto auto auto 0;
 }
 
-.previous-project {
+#other-projects {
+     display: flex;
+     justify-content: space-between;
+     flex-direction: row;
+     width: 90vw;
+     margin: 0 5vw;
+     height: 10vh;
+
+}
+
+#other-projects h3 {
     font-family: Roboto;
     font-weight: 300;
     font-size: 2.5vh;
@@ -166,49 +203,7 @@ section {
     color: #2a2a2a;
 }
 
-.previous-project:hover {
+#other-projects h3:hover {
     font-size: 2.75vh;
     cursor: pointer;
-}
-
-.next-project {
-    font-family: Roboto;
-    font-weight: 300;
-    font-size: 2.5vh;
-    letter-spacing: 0.02em;
-    line-height: 5vh;
-    text-align: left;
-    color: #2a2a2a;
-}
-
-.next-project:hover {
-    font-size: 2.75vh;
-    cursor: pointer;
-}
-
-#k3 img {
-    height: 75vh;
-    margin: auto auto auto 10vw;
-    box-shadow: 5px 5px 10px #C8C6C6,
-        -5px -5px 10px #F1EFEF;
-
-
-
-}
-
-
-#k4 div {
-    display: flex;
-    width: 70vw;
-    overflow-y: scroll;
-
-}
-
-#k4 div img {
-    height: auto;
-    width: 20vw;
-    margin: auto;
-    box-shadow: 5px 5px 10px #C8C6C6,
-        -5px -5px 10px #F1EFEF;
-
 }

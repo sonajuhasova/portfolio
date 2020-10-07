@@ -1,0 +1,193 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+video,
+frame {
+    max-width: 100%;
+    height: auto;
+}
+
+:root {
+    --bg: #ECECEC;
+}
+
+body {
+    background-color: var(--bg);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/*fonts*/
+.head-title {
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    font-size: 10vh;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #2a2a2a;
+
+}
+
+.head-subtitle {
+    width: 25vw;
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    font-size: 3vh;
+    letter-spacing: 0.02em;
+    line-height: 5vh;
+    text-align: left;
+    color: #2a2a2a;
+}
+
+.title {
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    font-size: 6vh;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #2a2a2a;
+    margin: 0 3vh 5vh 3vh;
+}
+
+.subtitle {
+    width: 28vw;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 2.5vh;
+    letter-spacing: 0.02em;
+    line-height: 5vh;
+    text-align: left;
+    color: #2a2a2a;
+    margin: 3vh;
+}
+
+.link {
+    width: 25vw;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 2.5vh;
+    letter-spacing: 0.02em;
+    line-height: 5vh;
+    text-align: left;
+    color: #2a2a2a;
+    margin: 3vh 3vh 0 3vh;
+
+}
+
+.link:hover {
+    opacity: 0.5;
+}
+
+.arrow {
+    height: 5vh;
+    position: fixed;
+    top: 10vh;
+    left: 10vh;
+}
+
+.arrow:hover {
+    height: 5.5vh;
+}
+
+#intro {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#intro div {
+    margin: auto 0 auto auto;
+}
+
+#intro div h1 {
+    margin: 0 3vh 0 3vh;
+}
+
+#intro div h2 {
+    margin: 0 3vh 7vh 3vh;
+}
+
+#intro img {
+    height: 85vh;
+    margin: auto auto auto 5vw;
+}
+
+#prototype {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#prototype img {
+    height: 85vh;
+    margin: auto 5vw auto auto;
+}
+
+#prototype div {
+    margin: auto auto auto 0;
+}
+
+#prototype div h2 {
+    width: 40vw;
+}
+
+#large-screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#large-screen div {
+    margin: auto 0 auto auto;
+}
+
+#large-screen img {
+    height: 75vh;
+    margin: auto auto auto 10vw;
+    box-shadow: 5px 5px 10px #C8C6C6,
+        -5px -5px 10px #F1EFEF;
+
+
+
+}
+
+
+
+
+
+#other-projects {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90vw;
+    margin: 0 5vw;
+    height: 10vh;
+
+}
+
+#other-projects h3 {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 2.5vh;
+    letter-spacing: 0.02em;
+    line-height: 5vh;
+    text-align: left;
+    color: #2a2a2a;
+}
+
+#other-projects h3:hover {
+    font-size: 2.75vh;
+    cursor: pointer;
+}

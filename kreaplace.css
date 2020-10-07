@@ -140,6 +140,8 @@ body {
     height: fit-content;
     margin: 20vh auto 0 auto;
     text-align: center;
+    text-shadow: 0.5px 0.5px 0.5px #C8C6C6,
+    -0.5px -0.5px 0.5px #F1EFEF;
 
 }
 
@@ -150,29 +152,6 @@ body {
     text-align: center;
 
 }
-
-#large-screen {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
-#large-screen div {
-    margin: auto 0 auto auto;
-}
-
-#large-screen img {
-    height: 75vh;
-    margin: auto auto auto 10vw;
-    box-shadow: 5px 5px 5px #C8C6C6,
-        -5px -5px 5px #F1EFEF;
-
-
-
-}
-
 
 
 
@@ -205,13 +184,10 @@ body {
 /*slide in on scroll*/
 
 .come-in {
-    transform: translateY(150px);
+    transform: translateY(50px);
     animation: come-in 2s ease forwards;
 }
 
-.come-in:nth-child(odd) {
-    animation-duration: 1s;
-}
 
 
 .already-visible {

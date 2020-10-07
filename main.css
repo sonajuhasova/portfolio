@@ -443,7 +443,7 @@ section {
 /*slide in on scroll*/
 
 .come-in {
-    transform: translateY(150px);
+    transform: translateY(50px);
     animation: come-in 2s ease forwards;
 }
 

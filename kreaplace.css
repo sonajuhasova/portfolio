@@ -131,8 +131,8 @@ body {
 #prototype img {
     width: 60vw;
     margin: 5vh auto;
-    box-shadow: 1px 1px 1px #C8C6C6,
-        -1px -1px 1px #F1EFEF;
+    box-shadow: 3px 3px 3px #C8C6C6,
+        -3px -3px 3px #F1EFEF;
 }
 
 #prototype h1 {
@@ -141,7 +141,7 @@ body {
     margin: 20vh auto 0 auto;
     text-align: center;
     text-shadow: 0.5px 0.5px 0.5px #C8C6C6,
-    -0.5px -0.5px 0.5px #F1EFEF;
+        -0.5px -0.5px 0.5px #F1EFEF;
 
 }
 

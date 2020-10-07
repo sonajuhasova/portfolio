@@ -122,23 +122,33 @@ body {
 
 #prototype {
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 #prototype img {
-    height: 85vh;
-    margin: auto 5vw auto auto;
+    width: 60vw;
+    margin: 5vh auto;
+    box-shadow: 1px 1px 1px #C8C6C6,
+        -1px -1px 1px #F1EFEF;
 }
 
-#prototype div {
-    margin: auto auto auto 0;
+#prototype h1 {
+    width: auto;
+    height: fit-content;
+    margin: 20vh auto 0 auto;
+    text-align: center;
+
 }
 
-#prototype div h2 {
-    width: 40vw;
+#prototype h2 {
+    width: 50vw;
+    height: fit-content;
+    margin: 10vh auto;
+    text-align: center;
+
 }
 
 #large-screen {
@@ -190,4 +200,27 @@ body {
 #other-projects h3:hover {
     font-size: 2.75vh;
     cursor: pointer;
+}
+
+/*slide in on scroll*/
+
+.come-in {
+    transform: translateY(150px);
+    animation: come-in 2s ease forwards;
+}
+
+.come-in:nth-child(odd) {
+    animation-duration: 1s;
+}
+
+
+.already-visible {
+    transform: translateY(0);
+    animation: none;
+}
+
+@keyframes come-in {
+    to {
+        transform: translateY(0);
+    }
 }

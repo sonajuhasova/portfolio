@@ -171,7 +171,7 @@ body {
 
 }
 
-#mobile-version  div {
+#mobile-version div {
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -182,6 +182,15 @@ body {
     flex-direction: column;
     margin: 2vw;
 }
+
+#mobile-version div:nth-child(1) {
+    padding-top: 10vh;
+}
+
+#mobile-version div:nth-child(3) {
+    padding-top: 20vh;
+}
+
 
 #mobile-version div div img {
     width: 20vw;

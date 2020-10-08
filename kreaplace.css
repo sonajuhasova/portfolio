@@ -231,7 +231,7 @@ body {
 /*slide in on scroll*/
 
 .come-in {
-    transform: translateY(100px);
+    transform: translateY(30vh);
     animation: come-in 2s ease forwards;
 }
 

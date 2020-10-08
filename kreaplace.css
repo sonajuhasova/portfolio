@@ -153,6 +153,44 @@ body {
 
 }
 
+#mobile-version {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#mobile-version h1 {
+    width: auto;
+    height: fit-content;
+    margin: 20vh auto 0 auto;
+    text-align: center;
+    text-shadow: 0.5px 0.5px 0.5px #C8C6C6,
+        -0.5px -0.5px 0.5px #F1EFEF;
+
+}
+
+#mobile-version  div {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+#mobile-version div div {
+    display: flex;
+    flex-direction: column;
+    margin: 2vw;
+}
+
+#mobile-version div div img {
+    width: 20vw;
+    margin: 5vh auto;
+    box-shadow: 3px 3px 3px #C8C6C6,
+        -3px -3px 3px #F1EFEF;
+
+}
+
 
 
 

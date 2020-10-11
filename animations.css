@@ -1,0 +1,249 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+video,
+frame {
+    max-width: 100%;
+    height: auto;
+}
+
+:root {
+    --bg: #ECECEC;
+}
+
+body {
+    background-color: var(--bg);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/*fonts*/
+.head-title {
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    font-size: 10vh;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #2a2a2a;
+
+}
+
+.head-subtitle {
+    width: 25vw;
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    font-size: 3vh;
+    letter-spacing: 0.02em;
+    line-height: 5vh;
+    text-align: left;
+    color: #2a2a2a;
+}
+
+.title {
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    font-size: 6vh;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #2a2a2a;
+    margin: 0 3vh 5vh 3vh;
+}
+
+.subtitle {
+    width: 28vw;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 2.5vh;
+    letter-spacing: 0.02em;
+    line-height: 5vh;
+    text-align: left;
+    color: #2a2a2a;
+    margin: 3vh;
+}
+
+.link {
+    width: 25vw;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 2.5vh;
+    letter-spacing: 0.02em;
+    line-height: 5vh;
+    text-align: left;
+    color: #2a2a2a;
+    margin: 3vh 3vh 0 3vh;
+
+}
+
+.link:hover {
+    opacity: 0.5;
+}
+
+.arrow {
+    height: 5vh;
+    position: fixed;
+    top: 10vh;
+    left: 10vh;
+}
+
+.arrow:hover {
+    height: 5.5vh;
+}
+
+/*intro animations slideshow*/
+#intro {
+    height: 100vh;
+    width: 100vw;
+    background-color: #2a2a2a;
+    display: flex;
+    flex-direction: column;
+}
+
+#intro h1 {
+    color: #ececec;
+    margin: 5vh auto auto 15vw;
+}
+
+.middle-section {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.anim-container {
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid white;
+    margin: auto;
+}
+
+/*arrow buttons*/
+
+.prev {
+    height: 8vh;
+    margin: auto;
+}
+
+.next {
+    height: 8vh;
+    margin: auto;
+}
+
+.prev:hover,
+.next:hover {
+    cursor: pointer;
+    height: 9vh;
+    margin: auto;
+}
+
+.slideshow-container {
+    margin: 15vh 15vh 0 15vh;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+
+}
+
+/*DOTS*/
+
+.dots {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: auto;
+}
+
+.dot {
+    border-radius: 50%;
+    background: #E3E0E0;
+    box-shadow: inset 3px 3px 3px #C8C6C6,
+        inset -3px -3px 3px #F1EFEF;
+    height: 1.5vw;
+    width: 1.5vw;
+    margin: 0.7vw;
+}
+
+.dot:hover {
+    cursor: pointer;
+}
+
+.dot-active {
+    border-radius: 50%;
+    background: #ececec;
+    box-shadow: 2px 2px 2px #D4D4D4,
+        -2px -2px 2px #F5F5F5;
+    height: 1.5vw;
+    width: 1.5vw;
+    margin: 0.7vw;
+
+}
+
+/* Fading animation */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+#other-projects {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90vw;
+    margin: 0 5vw;
+    height: 10vh;
+
+}
+
+#other-projects h3 {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 2.5vh;
+    letter-spacing: 0.02em;
+    line-height: 5vh;
+    text-align: left;
+    color: #2a2a2a;
+}
+
+#other-projects h3:hover {
+    font-size: 2.75vh;
+    cursor: pointer;
+}
+
+/*slide in on scroll*/
+
+.come-in {
+    transform: translateY(3a0vh);
+    animation: come-in 2s ease forwards;
+}
+
+
+
+.already-visible {
+    transform: translateY(0);
+    animation: none;
+}
+
+@keyframes come-in {
+    to {
+        transform: translateY(0);
+    }
+}

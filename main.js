@@ -85,7 +85,7 @@ function scrollFunction() {
         document.getElementById("a1").classList.add("nav-el-scroll");
 
         document.getElementById("a2").classList.remove("nav-el");
-        document.getElementById("a2").classList.add("nav-el-scroll");   
+        document.getElementById("a2").classList.add("nav-el-scroll");
 
         document.getElementById("a3").classList.remove("nav-el");
         document.getElementById("a3").classList.add("nav-el-scroll");
@@ -144,5 +144,3 @@ function scrollNav() {
         document.getElementById("a4").style.fontWeight = '500';
     }
 }
-
-

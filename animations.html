@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sona Juhasova | Kreaplace</title>
+    <meta name="author" content="Sona Juhasova">
+    <meta name="description" content="Kreaplce">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="icon" type="image/x-icon" href="" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <main>
+        <a href="index.html#projects"><img src="media/back.png" alt="go back" class="arrow"></a>
+
+        <section id="intro">
+            <h1 class="head-title">3D animations</h1>
+            <div class="middle-section">
+                <img src="media/previous.png" onclick="plusSlides(-1)" class="prev"></img>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="anim-container"></div>
+
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="anim-container"></div>
+
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="anim-container"></div>
+
+                    </div>
+
+                    <img src="media/next.png" onclick="plusSlides(1)" class="next"></img>
+
+                </div>
+            </div>
+            <div class="dots">
+                <div class="dot" onclick="currentSlide(1)"></div>
+                <div class="dot" onclick="currentSlide(2)"></div>
+                <div class="dot" onclick="currentSlide(3)"></div>
+            </div>
+
+
+        </section>
+
+        <div id="other-projects">
+            <h3 class="previous-project">&#8592; Previous project</h3>
+            <h3 class="next-project">Next project &#8594;</h3>
+        </div>
+
+
+
+
+    </main>
+    <script type="text/javascript" src="slide-in-scroll.js"></script>
+    <script type="text/javascript" src="anim-slides.js"></script>
+</body>
+
+</html>

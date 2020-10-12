@@ -99,27 +99,22 @@ body {
 #intro {
     height: 100vh;
     width: 100vw;
-    background-color: #2a2a2a;
+    /*background-color: #2a2a2a;*/
     display: flex;
     flex-direction: column;
-}
-
-#intro h1 {
-    color: #ececec;
-    margin: 5vh auto auto 15vw;
 }
 
 .middle-section {
     display: flex;
     flex-direction: row;
-    margin: auto;
+    margin: 20vh auto auto auto;
 }
 
 .anim-container {
     width: 50vw;
     height: 50vh;
-    border: 1px solid white;
     margin: auto;
+    padding-top: 20vh;
 }
 
 /*arrow buttons*/
@@ -151,12 +146,23 @@ body {
 
 }
 
+@keyframes fade {
+    from {
+        opacity: .1
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
 /*DOTS*/
 
 .dots {
     display: flex;
     flex-direction: row;
-    margin: auto;
+    margin: 10vh auto;
     width: auto;
 }
 
@@ -192,15 +198,377 @@ body {
     animation-duration: 1s;
 }
 
-@keyframes fade {
-    from {
-        opacity: .4
+/*ball animation*/
+.ball {
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(30deg) rotateY(0deg);
+    animation: movement 10s linear infinite;
+
+}
+
+
+.slice {
+    border: 1px solid #2a2a2a;
+    /*background: radial-gradient(circle, #ececec 0%, #2a2a2a 100%);*/
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /*    transform-style: preserve-3d;*/
+    animation: anim 10s infinite;
+
+
+
+
+}
+
+.slice:nth-child(1) {
+    width: 194px;
+    height: 194px;
+    transform: translateZ(180px);
+
+
+
+}
+
+.slice:nth-child(2) {
+    width: 240px;
+    height: 240px;
+    transform: translateZ(160px);
+}
+
+.slice:nth-child(3) {
+    width: 284px;
+    height: 284px;
+    transform: translateZ(140px);
+}
+
+.slice:nth-child(4) {
+    width: 320px;
+    height: 320px;
+    transform: translateZ(120px);
+}
+
+.slice:nth-child(5) {
+    width: 346px;
+    height: 346px;
+    transform: translateZ(100px);
+}
+
+.slice:nth-child(6) {
+    width: 366px;
+    height: 366px;
+    transform: translateZ(80px);
+}
+
+.slice:nth-child(7) {
+    width: 380px;
+    height: 380px;
+    transform: translateZ(60px);
+}
+
+.slice:nth-child(8) {
+    width: 390px;
+    height: 390px;
+    transform: translateZ(40px);
+}
+
+.slice:nth-child(9) {
+    width: 396px;
+    height: 396px;
+    transform: translateZ(20px);
+}
+
+.slice:nth-child(10) {
+    width: 400px;
+    height: 400px;
+    transform: translateZ(0px);
+
+}
+
+.slice:nth-child(11) {
+    width: 396px;
+    height: 396px;
+    transform: translateZ(-20px);
+}
+
+
+.slice:nth-child(12) {
+    width: 390px;
+    height: 390px;
+    transform: translateZ(-40px);
+}
+
+
+.slice:nth-child(13) {
+    width: 380px;
+    height: 380px;
+    transform: translateZ(-60px);
+}
+
+
+.slice:nth-child(14) {
+    width: 366px;
+    height: 366px;
+    transform: translateZ(-80px);
+}
+
+
+.slice:nth-child(15) {
+    width: 346px;
+    height: 346px;
+    transform: translateZ(-100px);
+}
+
+
+.slice:nth-child(16) {
+    width: 320px;
+    height: 320px;
+    transform: translateZ(-120px);
+}
+
+
+.slice:nth-child(17) {
+    width: 284px;
+    height: 284px;
+    transform: translateZ(-140px);
+}
+
+
+.slice:nth-child(18) {
+    width: 240px;
+    height: 240px;
+    transform: translateZ(-160px);
+}
+
+
+.slice:nth-child(19) {
+    width: 194px;
+    height: 194px;
+    transform: translateZ(-180px);
+
+
+}
+
+
+
+/*ANIMATIONS*/
+
+
+@keyframes movement {
+
+    100% {
+        transform: rotateX(30deg) rotateY(-360deg);
     }
 
-    to {
-        opacity: 1
+
+}
+
+/*circles animation*/
+.wrapper {
+    margin: auto;
+    transform: rotateX(60deg);
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 1px solid #2a2a2a;
+    border-radius: 50%;
+    animation: drop 3s ease-in-out infinite;
+
+}
+
+@keyframes drop {
+
+    0%,
+    100% {
+        transform: translateY(-250px);
+    }
+
+    50% {
+        transform: translateY(250px);
+    }
+
+}
+
+.circle:nth-child(1) {
+    width: 400px;
+    height: 400px;
+    animation-delay: 0.1s;
+}
+
+.circle:nth-child(2) {
+    width: 360px;
+    height: 360px;
+    animation-delay: 0.2s;
+}
+
+.circle:nth-child(3) {
+    width: 320px;
+    height: 320px;
+    animation-delay: 0.3s;
+}
+
+.circle:nth-child(4) {
+    width: 280px;
+    height: 280px;
+    animation-delay: 0.4s;
+}
+
+.circle:nth-child(5) {
+    width: 240px;
+    height: 240px;
+    animation-delay: 0.5s;
+}
+
+.circle:nth-child(6) {
+    width: 200px;
+    height: 200px;
+    animation-delay: 0.6s;
+}
+
+.circle:nth-child(7) {
+    width: 160px;
+    height: 160px;
+    animation-delay: 0.7s;
+}
+
+.circle:nth-child(8) {
+    width: 120px;
+    height: 120px;
+    animation-delay: 0.8s;
+}
+
+.circle:nth-child(9) {
+    width: 80px;
+    height: 80px;
+    animation-delay: 0.9s;
+}
+
+.circle:nth-child(10) {
+    width: 40px;
+    height: 40px;
+    animation-delay: 1s;
+}
+
+/*card animation*/
+.mySlides:nth-child(3) {
+    perspective: 600px;
+}
+
+.card {
+    margin: -25vh auto;
+    transform-style: preserve-3d;
+    animation: flip 6s infinite;
+    height: 400px;
+    width: 280px;
+    transform-origin: center;
+    display: flex;
+
+}
+
+.front {
+    background-image: url(media/animations/fff.jpg);
+    height: 400px;
+    width: 280px;
+    display: flex;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 5px;
+
+
+}
+
+.back {
+    background-image: url(media/animations/bbb.png);
+    height: 400px;
+    width: 280px;
+    display: flex;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotateX(180deg);
+    border-radius: 5px;
+
+
+}
+
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
     }
 }
+
+#title {
+    width: 100vw;
+    height: auto;
+}
+
+#title h1 {
+    margin: 15vh auto 0 auto;
+    width: 100vh;
+    text-align: center;
+}
+
+#description {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+#description p:nth-of-type(1) {
+    width: 50vw;
+    margin: 10vh auto;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+#description p:nth-of-type(2) {
+    width: 40vw;
+    margin: 0 auto 10vh auto;
+    text-align: center;
+    font-weight: 500;
+
+}
+
+
+
+
+
 
 
 #other-projects {

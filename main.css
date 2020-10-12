@@ -279,8 +279,28 @@ section {
     height: 70vh;
 }
 
-/*Kreaplace*/
+/**kreaplace*/
+
+.kreaplace {
+    display: flex;
+    flex-direction: row;
+}
+
+.kreaplace img {
+    height: 70vh;
+}
+
 /*CSS 3D animations*/
+
+.animations {
+    display: flex;
+    flex-direction: row;
+}
+
+.animations img {
+    width: 50vh;
+    margin: 10vh auto;
+}
 
 /*DOTS*/
 
@@ -316,7 +336,7 @@ section {
 }
 
 /* Fading animation */
-/*
+
 .fade {
     animation-name: fade;
     animation-duration: 1s;
@@ -324,14 +344,14 @@ section {
 
 @keyframes fade {
     from {
-        margin-left: 3vw;
+        transform: scale(0.95);
     }
 
     to {
-        margin-left: 0vw;
+        transform: scale(1);
     }
 }
-*/
+
 
 
 

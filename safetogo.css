@@ -128,17 +128,45 @@ body {
     flex-direction: row;
 }
 
+
+
 #user-journey img {
     height: 85vh;
-    margin: auto 5vw auto auto;
+    margin: auto 2vw auto auto;
 }
+
+
 
 #user-journey div {
     margin: auto auto auto 0;
 }
 
 #user-journey div h2 {
-    width: 40vw;
+    margin-top: 5vh;
+    width: 35vw;
+}
+
+#user-journey2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#user-journey2 img {
+    height: 85vh;
+    margin: auto auto auto 5vw;
+}
+
+#user-journey2 div {
+    margin: auto 0 auto auto;
+}
+
+#user-journey2 div h2 {
+    width: 30vw;
+    background: #ececec;
+
 }
 
 #colour-coding {
@@ -149,19 +177,32 @@ body {
     flex-direction: row;
 }
 
-#colour-coding div:nth-of-type(1) {
-    margin: auto 0 auto auto;
-}
-
-#colour-coding div:nth-of-type(2) {
+#colour-coding div {
     margin: auto auto auto 5vw;
 }
 
-#colour-coding div:nth-of-type(2) img {
+
+#colour-coding img {
     height: 75vh;
-    margin: auto 2vw;
+    margin: auto 0 auto auto;
     box-shadow: 5px 5px 5px #C8C6C6,
         -5px -5px 10px #F1EFEF;
+}
+
+#cc-mockups {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      padding: 0 15vw;
+}
+
+#cc-mockups img {
+    height: 75vh;
+    margin: auto ;
+    box-shadow: 5px 5px 5px #C8C6C6,
+    -5px -5px 10px #F1EFEF;
 }
 
 #api {
@@ -181,7 +222,13 @@ body {
 
 #api div {
     margin: auto auto auto 0;
+
 }
+
+#api div h2 {
+    width: 40vw;
+}
+
 
 #other-projects {
     display: flex;

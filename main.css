@@ -251,8 +251,7 @@ section {
 .prev:hover,
 .next:hover {
     cursor: pointer;
-    height: 9vh;
-    margin-top: 44.5vh;
+    transform: scale(1.2);
 }
 
 .slideshow-container {
@@ -405,6 +404,7 @@ section {
 .prev-shot:hover,
 .next-shot:hover {
     cursor: pointer;
+    transform: scale(1.2);
 }
 
 .myShots {

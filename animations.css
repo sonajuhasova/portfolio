@@ -132,8 +132,7 @@ body {
 .prev:hover,
 .next:hover {
     cursor: pointer;
-    height: 9vh;
-    margin: auto;
+    transform: scale(1.2);
 }
 
 .slideshow-container {
@@ -565,6 +564,9 @@ body {
 
 }
 
+#description p span {
+    font-weight: 500;
+}
 
 
 

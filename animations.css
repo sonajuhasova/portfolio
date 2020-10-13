@@ -531,39 +531,40 @@ body {
 #title {
     width: 100vw;
     height: auto;
+    margin-bottom: 10vh;
 }
 
 #title h1 {
     margin: 15vh auto 0 auto;
     width: 100vh;
     text-align: center;
+    text-shadow: 5px 5px 10px #C8C6C6,
+        -5px -5px 10px #F1EFEF;
 }
 
 #description {
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-
+    flex-direction: row
 }
 
 
 
-#description p:nth-of-type(1) {
+#description p {
     width: 50vw;
+    height: fit-content;
     margin: 10vh auto;
     text-align: center;
     font-weight: 700;
+    border-radius: 50px;
+    background: #ececec;
+    box-shadow: inset 5px 5px 10px #c9c9c9,
+        inset -7px -7px 14px #fcfcfc;
+    padding: 7vh;
 
 }
 
-#description p:nth-of-type(2) {
-    width: 40vw;
-    margin: 0 auto 10vh auto;
-    text-align: center;
-    font-weight: 500;
-
-}
 
 
 

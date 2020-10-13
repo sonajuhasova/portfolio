@@ -439,7 +439,11 @@ section {
 
 }
 
-.about-container {
+#about {
+    padding-left: 10vw;
+}
+
+#about div {
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -447,14 +451,16 @@ section {
     height: fit-content;
 }
 
-.about-img {
+#about div img {
     height: 80vh;
     margin: 10vh 1vw;
     box-shadow: 5px 5px 10px #C8C6C6,
         -5px -5px 10px #F1EFEF;
 }
 
-.about-text {
+#about div div {
+    display: flex;
+    flex-direction: column;
     height: fit-content;
     width: fit-content;
     margin: auto 1vw;
@@ -486,7 +492,6 @@ section {
 
 
 /*custom scroll bar*/
-
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -495,6 +500,7 @@ section {
 /* Track */
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 4px #2a2a2a;
+    background-color: #ececec;
 }
 
 /* Handle */
@@ -505,7 +511,7 @@ section {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #ECECEC;
+    background: #474747;
 }
 
 /* Extra small devices (phones, 600px and down) */

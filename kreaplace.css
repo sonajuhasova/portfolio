@@ -107,7 +107,8 @@ body {
 }
 
 #intro div {
-    margin: auto auto auto 20vw;
+    margin: auto auto auto 15vw;
+
 }
 
 #intro div h1 {
@@ -122,49 +123,122 @@ body {
 
 #intro div h3 {
     color: #ECECEC;
+    width: 40vw;
 }
 
 #intro div a {
     color: #ECECEC;
 }
 
-#intro img {
-    height: 85vh;
-    margin: auto auto auto 5vw;
-}
 
 #prototype {
     width: 100vw;
-    height: fit-content;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+#prototype div {
+    margin: auto auto auto 0;
 }
 
 #prototype img {
-    width: 60vw;
-    margin: 5vh auto;
+    height: 60vh;
+    margin: auto 5vw auto auto;
     box-shadow: 3px 3px 3px #C8C6C6,
         -3px -3px 3px #F1EFEF;
 }
 
 #prototype h1 {
     width: auto;
-    height: fit-content;
-    margin: 20vh auto 0 auto;
-    text-align: center;
+    margin: auto auto 5vh auto;
+    text-align: left;
     text-shadow: 0.5px 0.5px 0.5px #C8C6C6,
         -0.5px -0.5px 0.5px #F1EFEF;
 
 }
 
 #prototype h2 {
-    width: 50vw;
-    height: fit-content;
-    margin: 10vh auto;
-    text-align: center;
+    width: 30vw;
+    margin: auto;
+    text-align: left;
 
 }
+
+
+
+#funct {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+#funct div {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+#funct div div {
+    margin: auto 0 auto auto;
+
+}
+
+#funct h1 {
+    width: auto;
+    margin: auto auto 0 auto;
+    text-align: left;
+    text-shadow: 0.5px 0.5px 0.5px #C8C6C6,
+        -0.5px -0.5px 0.5px #F1EFEF;
+
+}
+
+#funct h2 {
+    width: 30vw;
+    margin: auto;
+    text-align: left;
+
+}
+
+
+#funct img {
+    height: 50vh;
+    margin: auto auto auto 5vw;
+    box-shadow: 3px 3px 3px #C8C6C6,
+        -3px -3px 3px #F1EFEF;
+}
+
+#funct2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+#funct2 div {
+    margin: auto auto auto 0;
+
+}
+
+#funct2 h2 {
+    width: 30vw;
+    margin: auto;
+    text-align: left;
+
+}
+
+
+#funct2 img {
+    height: 80vh;
+    margin: auto 5vw auto auto;
+    box-shadow: 3px 3px 3px #C8C6C6,
+        -3px -3px 3px #F1EFEF;
+}
+
 
 #mobile-version {
     width: 100vw;
@@ -262,7 +336,6 @@ body {
 }
 
 /*custom scroll bar*/
-
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -271,16 +344,17 @@ body {
 /* Track */
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 4px #2a2a2a;
-    background-color:#ececec;
+    background-color: #2a2a2a;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #2a2a2a;
+    background: #ececec;
     border-radius: 10px;
+    box-shadow: inset 0 0 2px #2a2a2a;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #474747;
+    background: #a7a5a5;
 }

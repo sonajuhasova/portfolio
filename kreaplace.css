@@ -154,8 +154,6 @@ body {
     width: auto;
     margin: auto auto 5vh auto;
     text-align: left;
-    text-shadow: 0.5px 0.5px 0.5px #C8C6C6,
-        -0.5px -0.5px 0.5px #F1EFEF;
 
 }
 
@@ -190,8 +188,6 @@ body {
     width: auto;
     margin: auto auto 0 auto;
     text-align: left;
-    text-shadow: 0.5px 0.5px 0.5px #C8C6C6,
-        -0.5px -0.5px 0.5px #F1EFEF;
 
 }
 
@@ -253,8 +249,6 @@ body {
     height: fit-content;
     margin: 20vh auto 0 auto;
     text-align: center;
-    text-shadow: 0.5px 0.5px 0.5px #C8C6C6,
-        -0.5px -0.5px 0.5px #F1EFEF;
 
 }
 

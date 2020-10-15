@@ -89,6 +89,7 @@ body {
     position: fixed;
     top: 10vh;
     left: 10vh;
+    z-index: 5;
 }
 
 .arrow:hover {
@@ -98,27 +99,36 @@ body {
 #intro {
     width: 100vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+    background-image: url(media/safetogo/bg.jpg);
+    background-size: contain;
 }
 
 #intro div {
-    margin: auto 0 auto auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 15vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    ;
 }
 
 #intro div h1 {
     margin: 0 3vh 0 3vh;
+    color: #ECECEC;
 }
 
 #intro div h2 {
     margin: 0 3vh 7vh 3vh;
+    color: #ECECEC;
 }
 
-#intro img {
-    height: 85vh;
-    margin: auto auto auto 5vw;
+#intro div h3 {
+    color: #ECECEC;
+    width: 45vw;
 }
+
 
 #user-journey {
     width: 100vw;
@@ -132,7 +142,7 @@ body {
 
 #user-journey img {
     height: 85vh;
-    margin: auto 2vw auto auto;
+    margin: 10vh 2vw auto auto;
 }
 
 
@@ -190,19 +200,19 @@ body {
 }
 
 #cc-mockups {
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      padding: 0 15vw;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 15vw;
 }
 
 #cc-mockups img {
     height: 75vh;
-    margin: auto ;
+    margin: auto;
     box-shadow: 5px 5px 5px #C8C6C6,
-    -5px -5px 10px #F1EFEF;
+        -5px -5px 10px #F1EFEF;
 }
 
 #api {
@@ -295,7 +305,7 @@ body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #ececec;
-    border-radius: 10px; 
+    border-radius: 10px;
     box-shadow: inset 0 0 2px #2a2a2a;
 }
 

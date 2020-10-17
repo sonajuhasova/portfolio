@@ -55,7 +55,7 @@ body {
 }
 
 .nav-el:hover {
-    margin-top: 1vh;
+    padding-top: 1vh;
 }
 
 .nav-el-scroll {
@@ -73,7 +73,7 @@ body {
 }
 
 .nav-el-scroll:hover {
-    margin-left: 1.5vw;
+    padding-left: 1.5vw;
 }
 
 
@@ -515,6 +515,7 @@ section {
 ::-webkit-scrollbar-thumb:hover {
     background: #a7a5a5;
 }
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
 

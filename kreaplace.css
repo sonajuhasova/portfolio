@@ -154,7 +154,7 @@ body {
     width: auto;
     margin: auto auto 5vh auto;
     text-align: left;
-
+    slide
 }
 
 #prototype h2 {
@@ -174,11 +174,13 @@ body {
     flex-direction: column;
 
 }
+
 #funct div {
     display: flex;
     flex-direction: row;
     margin: auto;
 }
+
 #funct div div {
     margin: auto 0 auto auto;
 
@@ -312,7 +314,7 @@ body {
 /*slide in on scroll*/
 
 .come-in {
-    transform: translateY(3a0vh);
+    transform: translateY(30vh);
     animation: come-in 2s ease forwards;
 }
 

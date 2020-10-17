@@ -100,7 +100,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-image: url(media/safetogo/bg.jpg);
-    background-size: contain;
+    background-size: cover;
 }
 
 #intro div {
@@ -288,4 +288,3 @@ body {
         transform: translateY(0);
     }
 }
-

@@ -31,6 +31,7 @@ body {
     margin-left: 75vw;
     margin-top: 3vh;
     position: absolute;
+    z-index: 100;
 }
 
 .navigation-scroll {
@@ -73,7 +74,7 @@ body {
 }
 
 .nav-el-scroll:hover {
-    padding-left: 1.5vw;
+    padding-top: 1vw;
 }
 
 
@@ -228,6 +229,8 @@ section {
 #projects {
     display: flex;
     flex-direction: column;
+    width: 80vw;
+    margin: 0 0 0 10vw;
 
 
 }
@@ -235,6 +238,7 @@ section {
 .middle-section {
     display: flex;
     flex-direction: row;
+    
 }
 
 /*arrow buttons*/

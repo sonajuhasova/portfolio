@@ -167,7 +167,7 @@ section {
 
 /*HOME*/
 #home {
-    background-image: url(media/me/home.JPG);
+    background-image: url(/media/me/home.JPG);
     background-size: cover;
     display: flex;
 }

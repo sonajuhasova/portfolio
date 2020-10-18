@@ -101,7 +101,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    background-image: url(media/kreaplace/b202.png);
+    background-image: url(/media/kreaplace/b202.png);
     background-position: bottom;
     background-size: cover;
 }

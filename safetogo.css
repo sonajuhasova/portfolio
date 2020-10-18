@@ -97,42 +97,37 @@ body {
 }
 
 #intro {
-    width: 100vw;
-    height: 100vh;
     background-image: url(media/safetogo/bg.jpg);
     background-size: cover;
 }
 
 #intro div {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
     flex-direction: column;
-    padding-left: 15vw;
+
     background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
 
 }
 
 #intro div h1 {
-    margin: 0 3vh 0 3vh;
+    margin: 0 auto 0 15vw;
     color: #ECECEC;
 }
 
 #intro div h2 {
-    margin: 0 3vh 7vh 3vh;
+    margin: 0 auto 10vh 15vw;
     color: #ECECEC;
 }
 
 #intro div h3 {
     color: #ECECEC;
     width: 45vw;
+    margin: 0 auto 3vh 15vw;
 }
 
 
-#user-journey {
-    width: 100vw;
-    height: 100vh;
+section>div>div.sectionWrapper {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -156,13 +151,6 @@ body {
     width: 35vw;
 }
 
-#user-journey2 {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
 
 #user-journey2 img {
     height: 85vh;
@@ -179,14 +167,6 @@ body {
 
 }
 
-#colour-coding {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
 #colour-coding div {
     margin: auto auto auto 5vw;
 }
@@ -200,11 +180,6 @@ body {
 }
 
 #cc-mockups {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
     padding: 0 15vw;
 }
 
@@ -215,13 +190,7 @@ body {
         -5px -5px 10px #F1EFEF;
 }
 
-#api {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
+#api {}
 
 #api img {
     height: 75vh;
@@ -266,7 +235,7 @@ body {
 }
 
 /*slide in on scroll*/
-
+/*
 .come-in {
     transform: translateY(100px);
     animation: come-in 2s ease forwards;
@@ -282,6 +251,22 @@ body {
     transform: translateY(0);
     animation: none;
 }
+
+@keyframes come-in {
+    to {
+        transform: translateY(0);
+    }
+}
+
+*/
+
+.module {
+    transform: translateY(100px);
+    animation: come-in 2s ease forwards;
+}
+
+
+
 
 @keyframes come-in {
     to {

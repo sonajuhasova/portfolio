@@ -23,13 +23,17 @@ body {
     scroll-behavior: smooth;
 }
 
+.topnav {
+    display: none;
+}
+
 .navigation {
     display: flex;
     flex-direction: row;
-    width: 20vw;
-    justify-content: space-between;
-    margin-left: 75vw;
-    margin-top: 3vh;
+    width: fit-content;
+    justify-content: left;
+    right: 3vw;
+    top: 3vh;
     position: absolute;
     z-index: 100;
 }
@@ -52,6 +56,7 @@ body {
     font-size: 2.5vh;
     color: #ececec;
     text-decoration: none;
+    padding: 0 3vh;
 
 }
 
@@ -504,10 +509,209 @@ section {
 @media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (max-width: 768px) and (min-width: 0px) {
+    body {
+        overflow-x: hidden;
+    }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+    .icon {
+        margin: 10px 20px 20px auto;
+        display: flex;
+        flex-direction: column;
+        z-index: 100;
+        height: fit-content;
+        width: fit-content;
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+
+    }
+
+    .icon div {
+        width: 35px;
+        height: 3px;
+        background-color: #ececec;
+
+        margin-top: 10px;
+    }
+
+    #bar1 {}
+
+    .topnav {
+        overflow: auto;
+        position: fixed;
+        width: 100vw;
+        height: fit-content;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        display: block;
+        justify-content: right;
+    }
+
+    .topnav #myLinks {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #2a2a2a;
+        padding-top: 20px;
+
+    }
+
+    .topnav #myLinks a {
+        color: #ececec;
+        margin: 20px;
+        text-decoration: none;
+        font-size: 40px;
+        display: block;
+        text-align: right;
+    }
+
+
+    .navigation {
+        display: none;
+    }
+
+    #home {
+        background-color: #2a2a2a;
+        background-image: none;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container {
+        margin: auto auto 10vh 10vw;
+
+    }
+
+    .container p {
+        font-size: 3vh;
+        line-height: 6vh;
+        width: 80vw;
+
+
+    }
+
+    .section-title {
+        display: flex;
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .title-3d {
+        font-family: "Roboto Slab";
+        font-size: 15vw;
+        text-align: left;
+        color: #2a2a2a;
+        margin: 10vh auto;
+
+
+    }
+
+    #projects {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+
+
+    }
+
+    .prev {
+        height: 50px;
+        margin: 50% 0 auto auto;
+    }
+
+    .next {
+        height: 50px;
+        margin: 50% 0 auto auto;
+    }
+
+    .slideshow-container {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+        height: fit-content;
+
+    }
+
+    .safetogo {
+        flex-direction: column;
+    }
+
+    .safetogo p {
+        display: none;
+    }
+
+    .safetogo .link {
+        margin: 0 auto;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .text {
+        height: fit-content;
+        margin: auto 0 auto 0;
+    }
+
+    .safetogo img {
+        width: 50vw;
+        height: auto;
+        margin: 0 auto 20px;
+    }
+
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (max-width: 992px) and (min-width: 768px) {
+        body {
+            overflow-x: hidden;
+        }
+
+        .navigation {
+            justify-self: center;
+            margin-left: auto;
+        }
+
+        #home {
+            background-color: #2a2a2a;
+            background-image: none;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container {
+            margin: auto auto 10vh 10vw;
+
+        }
+
+        .container p {
+            font-size: 3vh;
+            line-height: 6vh;
+            width: 80vw;
+
+
+        }
+    }
+
+    .section-title {
+        display: flex;
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .title-3d {
+        font-family: "Roboto Slab";
+        font-size: 15vw;
+        text-align: left;
+        color: #2a2a2a;
+        margin: 10vh auto;
+
+
+    }
+
+
+
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {}

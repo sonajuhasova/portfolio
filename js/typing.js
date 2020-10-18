@@ -3,7 +3,7 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Welcome to my portfolio", "My name is Soňa Juhásová", "I am a frontend developer"];
+const textArray = ["frontend developer", "UI/UX designer"];
 const typingDelay = 150;
 const erasingDelay = 100;
 const newTextDelay = 1500; // Delay between current and next text

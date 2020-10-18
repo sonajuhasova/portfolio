@@ -58,7 +58,7 @@ body {
 .subtitle {
     width: 28vw;
     font-family: Roboto;
-    font-weight: 300;
+    font-weight: 300 !important;
     font-size: 2.5vh;
     letter-spacing: 0.02em;
     line-height: 5vh;
@@ -118,12 +118,14 @@ body {
 #intro div h2 {
     margin: 0 auto 10vh 15vw;
     color: #ECECEC;
+    font-weight: 300 !important;
 }
 
 #intro div h3 {
     color: #ECECEC;
     width: 45vw;
     margin: 0 auto 3vh 15vw;
+    font-weight: 300 !important;
 }
 
 
@@ -149,6 +151,7 @@ section>div>div.sectionWrapper {
 #user-journey div h2 {
     margin-top: 5vh;
     width: 35vw;
+    font-weight: 300 !important;
 }
 
 
@@ -165,6 +168,7 @@ section>div>div.sectionWrapper {
     width: 30vw;
     background: #ececec;
     text-align: right;
+    font-weight: 300 !important;
 
 }
 
@@ -191,7 +195,7 @@ section>div>div.sectionWrapper {
         -5px -5px 10px #F1EFEF;
 }
 
-#api {}
+
 
 #api img {
     height: 75vh;
@@ -207,6 +211,7 @@ section>div>div.sectionWrapper {
 
 #api div h2 {
     width: 40vw;
+    font-weight: 300 !important;
 }
 
 
@@ -215,9 +220,13 @@ section>div>div.sectionWrapper {
     justify-content: space-between;
     flex-direction: row;
     width: 90vw;
-    margin: 0 5vw;
+    margin: 0 10vw;
     height: 10vh;
 
+}
+
+#other-projects a {
+    text-decoration: none;
 }
 
 #other-projects h3 {
@@ -226,7 +235,6 @@ section>div>div.sectionWrapper {
     font-size: 2.5vh;
     letter-spacing: 0.02em;
     line-height: 5vh;
-    text-align: left;
     color: #2a2a2a;
 }
 

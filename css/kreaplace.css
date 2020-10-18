@@ -154,7 +154,7 @@ body {
     width: auto;
     margin: auto auto 5vh auto;
     text-align: left;
-    slide
+
 }
 
 #prototype h2 {
@@ -196,7 +196,7 @@ body {
 #funct h2 {
     width: 30vw;
     margin: auto;
-    text-align: left;
+    text-align: right;
 
 }
 

@@ -137,7 +137,7 @@ section>div>div.sectionWrapper {
 
 #user-journey img {
     height: 85vh;
-    margin: 10vh 2vw auto auto;
+    margin: 5vh 0 auto auto;
 }
 
 
@@ -154,7 +154,7 @@ section>div>div.sectionWrapper {
 
 #user-journey2 img {
     height: 85vh;
-    margin: auto auto auto 5vw;
+    margin: auto auto auto 0;
 }
 
 #user-journey2 div {
@@ -164,6 +164,7 @@ section>div>div.sectionWrapper {
 #user-journey2 div h2 {
     width: 30vw;
     background: #ececec;
+    text-align: right;
 
 }
 

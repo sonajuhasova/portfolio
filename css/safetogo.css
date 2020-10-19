@@ -96,23 +96,34 @@ body {
     height: 5.5vh;
 }
 
+.section {
+    height: 100vh;
+    width: 100vw;
+}
+
 #intro {
     background-image: url(../media/safetogo/bg.jpg);
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
 #intro div {
     flex-direction: column;
 
     background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+
 
 }
 
 #intro div h1 {
-    margin: 0 auto 0 15vw;
+    margin: 20vh auto 0 15vw;
     color: #ECECEC;
+
 }
 
 #intro div h2 {
@@ -129,17 +140,16 @@ body {
 }
 
 
-section>div>div.sectionWrapper {
+
+#user-journey {
     display: flex;
-    justify-content: center;
     flex-direction: row;
 }
 
-
-
 #user-journey img {
     height: 85vh;
-    margin: 5vh 0 auto auto;
+    margin: 10vh 0 auto auto;
+
 }
 
 
@@ -154,6 +164,10 @@ section>div>div.sectionWrapper {
     font-weight: 300 !important;
 }
 
+#user-journey2 {
+    display: flex;
+    flex-direction: row;
+}
 
 #user-journey2 img {
     height: 85vh;
@@ -172,6 +186,11 @@ section>div>div.sectionWrapper {
 
 }
 
+#colour-coding {
+    display: flex;
+    flex-direction: row;
+}
+
 #colour-coding div {
     margin: auto auto auto 5vw;
 }
@@ -185,6 +204,8 @@ section>div>div.sectionWrapper {
 }
 
 #cc-mockups {
+    display: flex;
+    flex-direction: row;
     padding: 0 15vw;
 }
 
@@ -195,7 +216,10 @@ section>div>div.sectionWrapper {
         -5px -5px 10px #F1EFEF;
 }
 
-
+#api {
+    display: flex;
+    flex-direction: row;
+}
 
 #api img {
     height: 75vh;
@@ -220,7 +244,7 @@ section>div>div.sectionWrapper {
     justify-content: space-between;
     flex-direction: row;
     width: 90vw;
-    margin: 0 10vw;
+    margin: 0 auto;
     height: 10vh;
 
 }
@@ -244,7 +268,7 @@ section>div>div.sectionWrapper {
 }
 
 /*slide in on scroll*/
-/*
+
 .come-in {
     transform: translateY(100px);
     animation: come-in 2s ease forwards;
@@ -267,7 +291,7 @@ section>div>div.sectionWrapper {
     }
 }
 
-*/
+
 
 .module {
     transform: translateY(100px);
@@ -280,5 +304,187 @@ section>div>div.sectionWrapper {
 @keyframes come-in {
     to {
         transform: translateY(0);
+    }
+}
+
+@media all and (max-width: 768px) and (min-width:0) {
+    .title {
+        font-size: 5vh;
+        width: 100vw;
+        text-align: center;
+        margin: 0 auto !important;
+    }
+
+    .subtitle {
+        width: 100vw;
+        text-align: left;
+        margin: 0 auto !important;
+    }
+
+
+    .arrow {
+        height: 3vh;
+        top: 3vh;
+        left: 3vh;
+    }
+
+
+
+    #intro div h1 {
+        margin-top: 10vh;
+        font-size: 7vh;
+
+    }
+
+    #intro div h2 {
+        width: 80vw;
+    }
+
+    #intro div h3 {
+        width: 80vw;
+        font-size: 2.5vh;
+        line-height: 4vh;
+        text-align: left;
+    }
+
+
+
+    #user-journey {
+        flex-direction: column;
+        height: auto;
+        padding-top: 10vh;
+    }
+
+
+
+    #user-journey img {
+        width: 80vw;
+        height: auto;
+        margin: 10vh auto;
+        order: 2;
+    }
+
+    #user-journey div {
+        margin: 0;
+        order: 1;
+    }
+
+    #user-journey div h2 {
+        width: 80vw;
+        padding-top: 5vh;
+    }
+
+    #user-journey2 {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+    #user-journey2 img {
+        width: 80vw;
+        height: auto;
+        margin: 10vh auto;
+    }
+
+    #user-journey2 div {
+        margin: 0;
+    }
+
+    #user-journey2 div h2 {
+        width: 80vw;
+        text-align: left;
+        padding-top: 5vh;
+    }
+
+    #colour-coding {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #colour-coding img {
+        width: 60vw;
+        height: auto;
+        margin: 10vh auto;
+        order: 2;
+    }
+
+    #colour-coding div {
+        margin: 0;
+        order: 1;
+    }
+
+    #colour-coding div h2 {
+        width: 80vw;
+        text-align: left;
+        padding-top: 5vh;
+    }
+
+    #cc-mockups {
+        padding: 0;
+        height: auto;
+        flex-direction: column;
+    }
+
+    #cc-mockups img {
+        width: 60vw;
+        height: auto;
+        margin: 5vh auto;
+    }
+
+
+    #api {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+
+    #api img {
+        width: 60vw;
+        height: auto;
+        margin: 10vh auto;
+        order: 2;
+    }
+
+    #api div {
+        margin: 0;
+        order: 1;
+    }
+
+    #api div h2 {
+        width: 80vw;
+        padding-top: 5vh;
+    }
+
+    #other-projects {
+        margin-top: 10vh;
+    }
+
+}
+
+@media all and (max-width: 992px) and (min-width:768px) {
+
+    #intro div h3 {
+        width: 80vw;
+        font-size: 2.5vh;
+        line-height: 5vh;
+        text-align: left;
+    }
+
+    #user-journey img {
+        width: 60vw;
+        height: auto;
+    }
+
+    #user-journey2 img {
+        width: 60vw;
+        height: auto;
+    }
+
+    #colour-coding img,
+    #cc-mockups img,
+    #api img {
+        width: 40vw;
+        height: auto;
     }
 }

@@ -339,3 +339,217 @@ body {
         transform: translateY(0);
     }
 }
+
+@media all and (max-width: 768px) and (min-width:0) {
+    .title {
+        font-size: 5vh;
+        width: 100vw;
+        text-align: center;
+        margin: 0 auto !important;
+    }
+
+    .subtitle {
+        width: 100vw;
+        text-align: left;
+        margin: 0 auto !important;
+    }
+
+
+    .arrow {
+        height: 3vh;
+        top: 3vh;
+        left: 3vh;
+    }
+
+
+
+    #intro div h1 {
+        margin-top: 10vh;
+        font-size: 7vh;
+
+    }
+
+    #intro div h2 {
+        width: 80vw;
+    }
+
+    #intro div h3 {
+        width: 80vw;
+        font-size: 2.5vh;
+        line-height: 4vh;
+        text-align: left;
+    }
+
+
+
+    #prototype {
+        flex-direction: column;
+        height: auto;
+        padding-top: 10vh;
+    }
+
+
+
+    #prototype img {
+        width: 80vw;
+        height: auto;
+        margin: 10vh auto;
+        order: 2;
+    }
+
+    #prototype div {
+        margin: 0;
+        order: 1;
+    }
+
+    #prototype div h1 {
+        text-align: center;
+    }
+
+    #prototype div h2 {
+        width: 80vw;
+        padding-top: 5vh;
+    }
+
+    #funct {
+        flex-direction: column;
+        height: auto;   
+    }
+
+    #funct div {
+        flex-direction: column;
+    }
+
+    #funct h1 {
+        text-align: center;
+    }
+
+    
+
+    #funct img {
+        width: 80vw;
+        height: auto;
+        margin: 10vh auto;
+    
+        
+    }
+
+    
+
+    #funct div div h2 {
+        display: flex;
+        width: 80vw;
+        text-align: left;
+        padding-top: 5vh;
+    }
+
+    #funct2 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #funct2 img {
+        width: 80vw;
+        height: auto;
+        margin: 10vh auto;
+        order: 2;
+    }
+
+    #funct2 div {
+        margin: 0;
+        order: 1;
+    }
+
+    #funct2 div h2 {
+        width: 80vw;
+        text-align: left;
+        padding-top: 5vh;
+    }
+
+
+
+    #mobile-version div div img {
+        width: 60vw;
+        height: auto;
+        margin: 5vh auto;
+    }
+
+    #mobile-version div div:nth-child(2),
+    #mobile-version div div:nth-child(3) {
+        display: none;
+    }
+
+
+
+    #other-projects {
+        margin-top: 10vh;
+    }
+
+}
+
+@media all and (max-width: 992px) and (min-width:768px) {
+    #intro div {
+        margin: auto;
+    }
+
+    #intro div h3 {
+        width: 80vw;
+        margin: auto;
+        font-size: 2.5vh;
+        line-height: 5vh;
+        text-align: left;
+    }
+
+    #mobile-version div div:nth-child(2),
+    #mobile-version div div:nth-child(3) {
+        display: flex;
+    }
+
+
+    #mobile-version {
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #mobile-version h1 {
+        width: auto;
+        height: fit-content;
+        margin: 20vh auto 0 auto;
+        text-align: center;
+
+    }
+
+    #mobile-version div {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+
+    #mobile-version div div {
+        display: flex;
+        flex-direction: column;
+        margin: 2vw;
+    }
+
+    #mobile-version div:nth-child(1) {
+        padding-top: 5vh;
+    }
+
+    #mobile-version div:nth-child(3) {
+        padding-top: 10vh;
+    }
+
+
+    #mobile-version div div img {
+        width: 25vw;
+        margin: 2vw auto;
+        box-shadow: 3px 3px 3px #C8C6C6,
+            -3px -3px 3px #F1EFEF;
+
+    }
+
+
+}

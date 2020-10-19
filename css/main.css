@@ -172,7 +172,7 @@ section {
 
 /*HOME*/
 #home {
-    background-image: url(media/me/home.JPG);
+    background-image: url(/media/me/home.JPG);
     background-size: cover;
     display: flex;
 }
@@ -514,6 +514,10 @@ section {
         overflow-x: hidden;
     }
 
+    .navigation-scroll {
+        display: none;
+    }
+
     .icon {
         margin: 10px 20px 20px auto;
         display: flex;
@@ -604,26 +608,30 @@ section {
         text-align: left;
         color: #2a2a2a;
         margin: 10vh auto;
+        font-weight: 300;
 
 
     }
 
     #projects {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 100vw;
+        height: fit-content;
+    }
 
-
+    .middle-section {
+        height: 50vh;
     }
 
     .prev {
         height: 50px;
-        margin: 50% 0 auto auto;
+        margin: 100px 30px auto auto;
     }
 
     .next {
         height: 50px;
-        margin: 50% 0 auto auto;
+        margin: 100px auto auto 30px;
     }
 
     .slideshow-container {
@@ -640,19 +648,30 @@ section {
         flex-direction: column;
     }
 
+    .safetogo h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+
     .safetogo p {
         display: none;
     }
 
     .safetogo .link {
-        margin: 0 auto;
-        width: 100vw;
+        width: fit-content;
         text-align: center;
+        margin: 0 auto;
+
     }
+
 
     .text {
         height: fit-content;
-        margin: auto 0 auto 0;
+        justify-content: center;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
     }
 
     .safetogo img {
@@ -661,11 +680,77 @@ section {
         margin: 0 auto 20px;
     }
 
+    .kreaplace {
+        flex-direction: column;
+    }
+
+    .kreaplace h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .kreaplace p {
+        display: none;
+    }
+
+    .kreaplace .link {
+        width: fit-content;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+    .kreaplace img {
+        width: 50vw;
+        height: auto;
+        margin: 0 auto 20px;
+    }
+
+    .animations {
+        flex-direction: column;
+    }
+
+    .animations h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .animations p {
+        display: none;
+    }
+
+    .animations .link {
+        width: fit-content;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+    .animations img {
+        width: 50vw;
+        height: auto;
+        margin: 30px auto 20px;
+    }
+
+    .dots {
+        margin: 50px auto;
+        width: fit-content;
+    }
+
+    .dot {
+        height: 30px;
+        width: 30px;
+        margin-left: 20px;
+    }
 
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (max-width: 992px) and (min-width: 768px) {
         body {
             overflow-x: hidden;
+        }
+
+        .navigation-scroll {
+            display: none;
         }
 
         .navigation {
@@ -708,6 +793,138 @@ section {
         margin: 10vh auto;
 
 
+    }
+
+    #projects {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .middle-section {
+        height: 70vh;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .prev {
+        height: 50px;
+        margin: 25vh 30px auto auto;
+    }
+
+    .next {
+        height: 50px;
+        margin: 25vh auto auto 30px;
+    }
+
+    .slideshow-container {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+        height: fit-content;
+
+    }
+
+    .safetogo {
+        flex-direction: column;
+    }
+
+    .safetogo h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .safetogo p {
+        display: none;
+    }
+
+    .safetogo .link {
+        width: fit-content;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+
+    .text {
+        height: fit-content;
+        justify-content: center;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .safetogo img {
+        width: 50vw;
+        height: auto;
+        margin: 0 auto 20px;
+    }
+
+    .kreaplace {
+        flex-direction: column;
+    }
+
+    .kreaplace h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .kreaplace p {
+        display: none;
+    }
+
+    .kreaplace .link {
+        width: fit-content;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+    .kreaplace img {
+        width: 50vw;
+        height: auto;
+        margin: 0 auto 20px;
+    }
+
+    .animations {
+        flex-direction: column;
+    }
+
+    .animations h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .animations p {
+        display: none;
+    }
+
+    .animations .link {
+        width: fit-content;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+    .animations img {
+        width: 50vw;
+        height: auto;
+        margin: 30px auto 20px;
+    }
+
+    .dots {
+        margin: 50px auto;
+        width: fit-content;
+    }
+
+    .dot {
+        height: 30px;
+        width: 30px;
+        margin-left: 20px;
     }
 
 

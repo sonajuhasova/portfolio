@@ -502,13 +502,6 @@ section {
 
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) and (min-width: 0px) {
     body {
         overflow-x: hidden;
@@ -618,10 +611,12 @@ section {
         flex-direction: row;
         width: 100vw;
         height: fit-content;
+        margin: 0;
     }
 
     .middle-section {
-        height: 50vh;
+        height: fit-content;
+        margin: 0 auto 20px auto;
     }
 
     .prev {
@@ -729,18 +724,100 @@ section {
     .animations img {
         width: 50vw;
         height: auto;
-        margin: 30px auto 20px;
+        margin: 30px auto 0px;
     }
 
     .dots {
-        margin: 50px auto;
+        margin: 0 auto 0 auto;
         width: fit-content;
     }
 
     .dot {
-        height: 30px;
-        width: 30px;
-        margin-left: 20px;
+        height: 15px;
+        width: 15px;
+        margin: 10px;
+    }
+
+    #shots {
+        flex-direction: column;
+    }
+
+    .shots-text {
+        margin: 0 auto;
+    }
+
+    .shots-title {
+        display: none;
+        margin: 0 auto 0 auto;
+    }
+
+    .shots-text h2 {
+        width: 90vw;
+        text-align: center;
+        margin: 0;
+
+    }
+
+    .slides-section {
+        margin: 30px auto;
+    }
+
+    .prev-shot {
+        height: 50px;
+        margin: 35vh 0 0 auto;
+    }
+
+    .next-shot {
+        height: 50px;
+        margin: 35vh auto 0 0;
+    }
+
+    .myShots {
+        margin: 20px auto;
+    }
+
+
+
+    .dot- {
+        height: 15px;
+        width: 15px;
+        margin: 10px;
+    }
+
+    #about {
+        padding-left: 0;
+    }
+
+    #about div {
+        flex-direction: column;
+    }
+
+    #about div img {
+        width: 80vw;
+        height: auto;
+        margin: 20px auto;
+        box-shadow: 5px 5px 10px #C8C6C6,
+            -5px -5px 10px #F1EFEF;
+        order: 2;
+    }
+
+    #about div div {
+        height: fit-content;
+        width: 90vw;
+        margin: 250px auto 20px auto;
+        order: 1;
+    }
+
+    #about div div h1 {
+        width: 90vw;
+        text-align: center;
+        margin: 0 auto 20px auto;
+    }
+
+    #about div div h2 {
+        width: 90vw;
+        text-align: center;
+        margin: 0 auto;
     }
 
     /* Large devices (laptops/desktops, 992px and up) */
@@ -803,19 +880,19 @@ section {
     }
 
     .middle-section {
-        height: 70vh;
+        height: fit-content;
         width: fit-content;
-        margin: 0 auto;
+        margin: 0 auto 20px auto;
     }
 
     .prev {
         height: 50px;
-        margin: 25vh 30px auto auto;
+        margin: 25vh 0 auto auto;
     }
 
     .next {
         height: 50px;
-        margin: 25vh auto auto 30px;
+        margin: 25vh auto auto 0;
     }
 
     .slideshow-container {
@@ -917,18 +994,96 @@ section {
     }
 
     .dots {
-        margin: 50px auto;
+        margin: 0 auto;
         width: fit-content;
     }
 
     .dot {
-        height: 30px;
-        width: 30px;
-        margin-left: 20px;
+        height: 20px;
+        width: 20px;
+        margin: 5px;
+    }
+
+    #shots {
+        flex-direction: column;
+    }
+
+    .shots-text {
+        margin: 0 auto;
+    }
+
+    .shots-title {
+        display: none;
+        margin: 0 auto 0 auto;
+    }
+
+    .shots-text h2 {
+        width: 90vw;
+        text-align: center;
+        margin: 0;
+
+    }
+
+    .slides-section {
+        margin: 30px auto;
+    }
+
+    .prev-shot {
+        height: 50px;
+        margin: 35vh 30px 0 auto;
+    }
+
+    .next-shot {
+        height: 50px;
+        margin: 35vh auto 0 30px;
+    }
+
+    .myShots {
+        margin: 20px auto;
+    }
+
+    .dot- {
+        height: 20px;
+        width: 20px;
+        margin-left: 5px;
     }
 
 
+    #about {
+        padding-left: 0;
+    }
 
+    #about div {
+        flex-direction: column;
+    }
 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {}
+    #about div img {
+        width: 80vw;
+        height: auto;
+        margin: 20px auto;
+        box-shadow: 5px 5px 10px #C8C6C6,
+            -5px -5px 10px #F1EFEF;
+
+        order: 2;
+
+    }
+
+    #about div div {
+        height: fit-content;
+        width: 90vw;
+        margin: 150px auto 20px auto;
+        order: 1;
+    }
+
+    #about div div h1 {
+        width: 90vw;
+        text-align: center;
+        margin: 0 auto 20px auto;
+    }
+
+    #about div div h2 {
+        width: 90vw;
+        text-align: center;
+        margin: 0 auto;
+    }
+

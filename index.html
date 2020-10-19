@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/scrollbar.css">
     <link rel="icon" type="image/x-icon" href="" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300,500&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,500&subset=latin,latin-ext" rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
@@ -26,19 +26,17 @@
         <a href='#about' id='a4' class="nav-el">About</a>
     </header>
     <!--mobile navigation-->
-<div class="topnav">
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <div id="bar1"></div>
-    <div id="bar2"></div>
-    <div id="bar3"></div>
-     </a>
-  <div id="myLinks">
-     <a href='#home' id='a1' class="nav-el">Home</a>
-        <a href='#projects' class="nav-el">Projects</a>
-        <a href='#shots' class="nav-el">Design</a>
-        <a href='#about' class="nav-el">About</a>
-  </div>
+    <div class="nav-toggle">
+  <div class="nav-toggle-bar"></div>
 </div>
+<nav class="nav">
+  <ul>
+    <li> <a href='#home'>Home</a></li>
+    <li><a href='#projects'>Projects</a></li>
+    <li><a href='#shots'>Design</a></li>
+    <li><a href='#about'>About</a></li>
+  </ul>
+</nav>
     <main>
         
         <div id="fullpage">

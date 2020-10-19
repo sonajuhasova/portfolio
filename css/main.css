@@ -23,9 +23,7 @@ body {
     scroll-behavior: smooth;
 }
 
-.topnav {
-    display: none;
-}
+
 
 .navigation {
     display: flex;
@@ -82,6 +80,137 @@ body {
     padding-top: 1vw;
 }
 
+/*mobile menu*/
+.nav {
+    -webkit-transition: left 0.5s ease;
+    -moz-transition: left 0.5s ease;
+    -ms-transition: left 0.5s ease;
+    -o-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+    background: #2a2a2a;
+    color: #ececec;
+    cursor: pointer;
+    height: 100vh;
+    left: -100vw;
+    padding: 6rem 2rem 2rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 2;
+    font-size: 30px;
+}
+
+.nav-toggle-bar {
+    display: none;
+}
+
+.nav.expanded {
+    left: 0;
+}
+
+.nav ul {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    text-align: right;
+}
+
+.nav ul li a {
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    font-size: 5vh;
+    line-height: 10vh;
+    color: #ececec;
+    text-decoration: none;
+    padding: 2vh 3vh;
+
+}
+
+.nav-toggle {
+    position: fixed;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+    right: -40px;
+    top: -40px;
+    border-bottom-left-radius: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    background-color: #2a2a2a;
+}
+
+
+
+
+
+.nav-toggle .nav-toggle-bar,
+.nav-toggle .nav-toggle-bar::after,
+.nav-toggle .nav-toggle-bar::before {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: white;
+    content: '';
+    height: 5px;
+    width: 40px;
+}
+
+
+
+.nav-toggle .nav-toggle-bar {
+    margin-top: 0;
+}
+
+.nav-toggle .nav-toggle-bar::after {
+    margin-top: 0.8rem;
+}
+
+.nav-toggle .nav-toggle-bar::before {
+    margin-top: -0.8rem;
+}
+
+.nav-toggle.expanded .nav-toggle-bar {
+    background: transparent;
+}
+
+.nav-toggle.expanded .nav-toggle-bar::after,
+.nav-toggle.expanded .nav-toggle-bar::before {
+    background: white;
+    margin-top: 0;
+}
+
+.nav-toggle.expanded .nav-toggle-bar::after {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.nav-toggle.expanded .nav-toggle-bar::before {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.nav-toggle {
+    z-index: 100;
+}
 
 section {
     width: 100vw;
@@ -507,68 +636,18 @@ section {
         overflow-x: hidden;
     }
 
+    .nav-toggle-bar {
+        display: block;
+    }
+
     .navigation-scroll {
         display: none;
     }
 
-    .icon {
-        margin: 10px 20px 20px auto;
-        display: flex;
-        flex-direction: column;
-        z-index: 100;
-        height: fit-content;
-        width: fit-content;
-
-
-    }
-
-    .icon div {
-        width: 35px;
-        height: 3px;
-        background-color: #ececec;
-
-        margin-top: 10px;
-    }
-
-
-
-
-    .topnav {
-        overflow: auto;
-        position: fixed;
-        width: 100vw;
-        height: fit-content;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 100;
-        display: block;
-        justify-content: right;
-    }
-
-    .topnav #myLinks {
-        display: none;
-        width: 100vw;
-        height: 100vh;
-        background-color: #2a2a2a;
-        padding-top: 20px;
-
-    }
-
-    .topnav #myLinks a {
-        color: #ececec;
-        margin: 20px;
-        text-decoration: none;
-        font-size: 40px;
-        display: block;
-        text-align: right;
-    }
-
-
     .navigation {
         display: none;
     }
+
 
     #home {
         background-color: #2a2a2a;
@@ -826,6 +905,7 @@ section {
 
 
 @media all and (max-width: 992px) and (min-width:768px) {
+
     body {
         overflow-x: hidden;
     }
@@ -838,6 +918,12 @@ section {
         justify-self: center;
         margin-left: auto;
     }
+
+
+    .nav-toggle-bar {
+        display: block;
+    }
+
 
     #home {
         background-color: #2a2a2a;

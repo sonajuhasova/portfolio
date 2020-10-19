@@ -148,6 +148,7 @@ body {
     justify-content: center;
     z-index: 2;
     background-color: #2a2a2a;
+    display: none;
 }
 
 
@@ -637,6 +638,7 @@ section {
         overflow-x: hidden;
     }
 
+    .nav-toggle,
     .nav-toggle-bar {
         display: block;
     }
@@ -920,10 +922,11 @@ section {
         margin-left: auto;
     }
 
-
+    .nav-toggle,
     .nav-toggle-bar {
         display: block;
     }
+
 
 
     #home {

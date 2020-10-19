@@ -662,9 +662,11 @@ body {
         margin-top: 5vh;
 
     }
- #description div {
-     margin: 5vh auto;
- }
+
+    #description div {
+        margin: 5vh auto;
+    }
+
     #description div h2,
     #description div h3 {
         width: 80vw;
@@ -674,11 +676,16 @@ body {
         padding-bottom: 5vh;
         font-weight: 300;
     }
-#description div img {
-    display: block;
-    width: 90vw;
-    margin: 0 auto 5vh auto;
-}
+
+    #description div img {
+        display: block;
+        width: 90vw;
+        margin: 0 auto 5vh auto;
+    }
 }
 
-@media all and (max-width: 992px) and (min-width:768px) {}
+@media all and (max-width: 992px) and (min-width:768px) {
+    #description {
+        height: auto;
+    }
+}

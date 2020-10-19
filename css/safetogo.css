@@ -144,6 +144,7 @@ body {
 #user-journey {
     display: flex;
     flex-direction: row;
+    height: 100vh;
 }
 
 #user-journey img {
@@ -167,6 +168,7 @@ body {
 #user-journey2 {
     display: flex;
     flex-direction: row;
+    height: 100vh;
 }
 
 #user-journey2 img {
@@ -189,6 +191,7 @@ body {
 #colour-coding {
     display: flex;
     flex-direction: row;
+    height: 100vh;
 }
 
 #colour-coding div {
@@ -207,6 +210,7 @@ body {
     display: flex;
     flex-direction: row;
     padding: 0 15vw;
+    height: 100vh;
 }
 
 #cc-mockups img {
@@ -219,6 +223,7 @@ body {
 #api {
     display: flex;
     flex-direction: row;
+    height: 100vh;
 }
 
 #api img {
@@ -293,19 +298,11 @@ body {
 
 
 
-.module {
-    transform: translateY(100px);
-    animation: come-in 2s ease forwards;
-}
 
 
 
 
-@keyframes come-in {
-    to {
-        transform: translateY(0);
-    }
-}
+
 
 @media all and (max-width: 768px) and (min-width:0) {
     .title {

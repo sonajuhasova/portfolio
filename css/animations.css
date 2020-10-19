@@ -568,6 +568,10 @@ body {
 }
 
 
+#description div img {
+    display: none;
+}
+
 
 
 
@@ -622,18 +626,59 @@ body {
     }
 }
 
+@media all and (max-width: 768px) and (min-width:0) {
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+    .subtitle {
+        width: 100vw;
+        text-align: left;
+        margin: 0 auto !important;
+    }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+    .arrow {
+        height: 3vh;
+        top: 3vh;
+        left: 3vh;
+    }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+    #intro {
+        display: none;
+    }
+
+    #description {
+        height: auto;
+    }
+
+    #description div {
+        flex-direction: column;
+    }
+
+    #description h1 {
+        margin-top: 10vh;
+        width: 100vw;
+        text-align: center;
+        font-size: 7vh !important;
+        margin-top: 5vh;
+
+    }
+ #description div {
+     margin: 5vh auto;
+ }
+    #description div h2,
+    #description div h3 {
+        width: 80vw;
+        font-size: 2.5vh;
+        line-height: 4vh;
+        text-align: left;
+        padding-bottom: 5vh;
+        font-weight: 300;
+    }
+#description div img {
+    display: block;
+    width: 90vw;
+    margin: 0 auto 5vh auto;
+}
+}
+
+@media all and (max-width: 992px) and (min-width:768px) {}

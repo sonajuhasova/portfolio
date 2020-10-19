@@ -97,7 +97,7 @@ body {
 }
 
 #intro {
-    background-image: url(/media/safetogo/bg.jpg);
+    background-image: url(../media/safetogo/bg.jpg);
     background-size: cover;
 }
 

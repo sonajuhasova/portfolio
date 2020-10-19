@@ -502,7 +502,7 @@ section {
 
 
 
-@media only screen and (max-width: 768px) and (min-width: 0px) {
+@media all and (max-width: 768px) and (min-width:0) {
     body {
         overflow-x: hidden;
     }
@@ -530,7 +530,8 @@ section {
         margin-top: 10px;
     }
 
-    #bar1 {}
+
+
 
     .topnav {
         overflow: auto;
@@ -608,7 +609,7 @@ section {
 
     #projects {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 100vw;
         height: fit-content;
         margin: 0;
@@ -773,6 +774,8 @@ section {
     }
 
     .myShots {
+        height: 60vh;
+        width: auto;
         margin: 20px auto;
     }
 
@@ -804,7 +807,7 @@ section {
     #about div div {
         height: fit-content;
         width: 90vw;
-        margin: 250px auto 20px auto;
+        margin: 20px auto 20px auto;
         order: 1;
     }
 
@@ -819,42 +822,43 @@ section {
         text-align: center;
         margin: 0 auto;
     }
-
-    /* Large devices (laptops/desktops, 992px and up) */
-    @media only screen and (max-width: 992px) and (min-width: 768px) {
-        body {
-            overflow-x: hidden;
-        }
-
-        .navigation-scroll {
-            display: none;
-        }
-
-        .navigation {
-            justify-self: center;
-            margin-left: auto;
-        }
-
-        #home {
-            background-color: #2a2a2a;
-            background-image: none;
-            width: 100vw;
-            height: 100vh;
-        }
-
-        .container {
-            margin: auto auto 10vh 10vw;
-
-        }
-
-        .container p {
-            font-size: 3vh;
-            line-height: 6vh;
-            width: 80vw;
+}
 
 
-        }
+@media all and (max-width: 992px) and (min-width:768px) {
+    body {
+        overflow-x: hidden;
     }
+
+    .navigation-scroll {
+        display: none;
+    }
+
+    .navigation {
+        justify-self: center;
+        margin-left: auto;
+    }
+
+    #home {
+        background-color: #2a2a2a;
+        background-image: none;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container {
+        margin: auto auto 10vh 10vw;
+
+    }
+
+    .container p {
+        font-size: 3vh;
+        line-height: 6vh;
+        width: 80vw;
+
+
+    }
+
 
     .section-title {
         display: flex;
@@ -887,12 +891,12 @@ section {
 
     .prev {
         height: 50px;
-        margin: 25vh 0 auto auto;
+        margin: 30vw 20px auto auto;
     }
 
     .next {
         height: 50px;
-        margin: 25vh auto auto 0;
+        margin: 30vw auto auto 20px;
     }
 
     .slideshow-container {
@@ -1030,15 +1034,17 @@ section {
 
     .prev-shot {
         height: 50px;
-        margin: 35vh 30px 0 auto;
+        margin: 40vh 50px 0 auto;
     }
 
     .next-shot {
         height: 50px;
-        margin: 35vh auto 0 30px;
+        margin: 40vh auto 0 50px;
     }
 
     .myShots {
+        width: auto;
+        height: 80vh;
         margin: 20px auto;
     }
 
@@ -1058,7 +1064,7 @@ section {
     }
 
     #about div img {
-        width: 80vw;
+        width: 50vw;
         height: auto;
         margin: 20px auto;
         box-shadow: 5px 5px 10px #C8C6C6,
@@ -1086,4 +1092,4 @@ section {
         text-align: center;
         margin: 0 auto;
     }
-
+}

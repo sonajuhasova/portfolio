@@ -847,12 +847,12 @@ section {
 
     .prev-shot {
         height: 50px;
-        margin: 35vh 0 0 auto;
+        margin: 35vh 5vw 0 auto;
     }
 
     .next-shot {
         height: 50px;
-        margin: 35vh auto 0 0;
+        margin: 35vh auto 0 5vw;
     }
 
     .myShots {

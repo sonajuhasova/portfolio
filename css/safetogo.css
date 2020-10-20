@@ -165,6 +165,20 @@ body {
     font-weight: 300 !important;
 }
 
+#onboarding {
+    display: flex;
+    flex-direction: row;
+    padding: 0 10vw;
+    height: 100vh;
+}
+
+#onboarding img {
+    height: 75vh;
+    margin: auto;
+    box-shadow: 5px 5px 5px #C8C6C6,
+        -5px -5px 10px #F1EFEF;
+}
+
 #user-journey2 {
     display: flex;
     flex-direction: row;
@@ -173,7 +187,9 @@ body {
 
 #user-journey2 img {
     height: 85vh;
-    margin: auto auto auto 0;
+    margin: auto auto auto 5vw;
+    box-shadow: 5px 5px 5px #C8C6C6,
+    -5px -5px 10px #F1EFEF;
 }
 
 #user-journey2 div {
@@ -371,6 +387,18 @@ body {
         padding-top: 5vh;
     }
 
+    #onboarding {
+        padding: 0;
+        height: auto;
+        flex-direction: column;
+    }
+
+    #onboarding img {
+        width: 60vw;
+        height: auto;
+        margin: 5vh auto;
+    }
+
     #user-journey2 {
         flex-direction: column;
         height: auto;
@@ -378,7 +406,7 @@ body {
 
 
     #user-journey2 img {
-        width: 80vw;
+        width: 60vw;
         height: auto;
         margin: 10vh auto;
     }
@@ -478,6 +506,8 @@ body {
         height: auto;
     }
 
+    #onboarding img,
+    #user-journey2 img,
     #colour-coding img,
     #cc-mockups img,
     #api img {

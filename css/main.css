@@ -640,7 +640,7 @@ section {
 
     .nav-toggle,
     .nav-toggle-bar {
-        display: block;
+        display: flex;
     }
 
     .navigation-scroll {
@@ -924,7 +924,7 @@ section {
 
     .nav-toggle,
     .nav-toggle-bar {
-        display: block;
+        display: flex;
     }
 
 
